@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>financial engineering 2</title>
+      <link href="/2020/05/19/financial-engineering-1/"/>
+      <url>/2020/05/19/financial-engineering-1/</url>
+      
+        <content type="html"><![CDATA[<p><strong>算法交易和T0交易的区别</strong></p><p>在其他地方看一个博主的回答个人觉得比较符合实际（2020.5.19日以前的情况），在引用完全文后，还有个人的一些见解。</p><p>T0和算法交易从模型层面上来讲，区别并不是很大。都是基于股票横截面和时序数据做短周期预测，只是由于T0需要承担手续费，而算法交易则需要每天把交易需求全部做完，需要更多的交易信号以保证这一点，所以从信号强度来讲T0的信号强度会比算法交易大很多，同时信号个数会比算法交易少很多。不过算法比T0复杂的地方在于挂撤单和交易进度的控制，很多时候如果持续没有合适的信号或者时间比较紧张，挂单又不能成交，只能去敲一些对手价，这个时候就会产生亏损，如何控制交易进度并减少敲对价产生的损失，这又是另外一个问题了。</p><p>回到这个问题，那个方向更有前途。从目前业内状况看来，在任何一家alpha靠谱且管理规模大于2个亿的私募，算法交易都是比T0有前途的多的方向，整个方向的利润空间，生存压力都不是程序化T0所能想象的。这一点可能跟外界了解的区别甚大，这其中缘由，恐怕是18年各个券商私募的一轮造神运动中把T0吹上了天，而外界往往又不了解算法交易的利润空间所致，毕竟各位大佬们出去吹牛，可以吹我们程序化T0年化30%，可是没法吹算法交易年化30%，因为这理论上就不可能。</p><p>从截止本文的现实来看，算法交易至少在以下几个方面是远胜于T0的</p><p><strong>一、利润空间</strong></p><p>以一家靠谱且规模较小的私募为例，假设其总的股票持仓为2亿，每天的换手率25%，一个靠谱的算法交易员，其单边收益应该在万三到万六之间，这里取万4，双边就是万八，那么每天的底仓收益率大概是万二左右，年化是5%，大概对应业绩是1000万。5%在T0行业是什么概念呢，17年人工T0比较厉害的团队7%左右，程序化能做到3-4%就不错了。18年比较厉害的人工交易员团队能做到3-5%，程序化3%都有困难，19年除开上半年比较疯狂的几个月，下半年人工都做不到每天万一，程序化收益能做到年化1.5%已经不算差，也就是说，除了大牛市小牛市，程序化T0对底仓收益的贡献都是远低于算法交易的；</p><p><strong>二、资金容量</strong></p><p>前面说到算法交易信号强度要求低，触发次数多，而且有很多单纯的挂单成交，而T0由于要计算手续费，必然会要求比较强的信号，因此触发次数少很多，这就会带来另外一个问题，资金容量。比如一个T0的信号，可能要求强到有千3左右的费后预期收益才会去做，因为考虑到手续费和冲击成本，抢单难度，低于这个预期收益的信号实盘中可能会亏钱，而算法交易则不同，由于不需要手续费，可以做比较弱的信号，而此时的抢单难度不高，信号比较多，一次冲击成本也不会太大，因此可能预期有一个千二左右费前收益的信号就会做，考虑到千1.4左右的手续费，实际上这两个信号的强度差距千2.4，这样带来的信号个数可能是5-10倍的差距，相应的资金容量也会有类似的差距，也就是，同样一套模型，在T0上可能是3-5亿资金容量，在算法交易上就会有15-50亿的资金容量，这两者的差距显然是没有任何办法可以弥补的；</p><p><strong>三、竞争压力</strong></p><p>第一、目前国内程序化T0从产生到现在，一直面对一个强大的竞争对手，人工T0。目前业内前几名的私募，比如九坤幻方，都是有成规模的人工T0团队的，也就意味着这些公司的程序化T0在这么几年的发展中，依然比不过人工交易员，也不见业内有其他团队跳出来声称自己比人工T0强，目前市场上几家接程序化T0券的公司靠的是比人工交易员低一大截的提成，以及部分公司无力组建人工交易员团队，同时给出的提成又无法满足独立运营人工交易员团队的需求；第二，从2018年以来，很多期货高频团队受外资竞争影响，原有业务盈利下降非常厉害，甚至到了生存不下去的地步，因此逐步转型股票T0。实际上，这个市场的资金容量和利润空间都是极其有限的，但是由于私募行业整体上的封闭性和18年以来各大券商私募的错误宣传，导致这些人认为程序化T0是一个人傻钱多的行业，实际上到目前为止依然有期货高频团队排队入场，后果是这些人并没有开辟出新的方法来赚钱，反而是在原有的策略上大家相互抢钱，这也解释了为何19下半年在行情并没有明显比17年差的情况下，T0收益下降这么多。  </p><p>作者：匿名用户<br>链接：<a href="https://www.zhihu.com/question/354264347/answer/883277309" target="_blank" rel="noopener">https://www.zhihu.com/question/354264347/answer/883277309</a><br>来源：知乎</p><p><strong>个人见解</strong></p><p>首先，程序化交易无论是从掩盖交易量，还是提升利润空间都是可行的。资金量大的基金，更加希望能够借助程序化交易掩盖自身下单行为造成的市场影响，小规模的基因，则更加提升利润空间。</p><p>但是程序化交易的市场空间更大，T0的交易空间相对较小。在随着外资的引入，市场体系不断趋向于成熟，市场能出现适合做T0的机会注定是越来越少的。从长远看，这应该是符合有效市场理论的（这就不做过多展开了）。</p><p>其次，那么来讨论一下市场越来越成熟，难道程序化交易不受到影响么，受到！但是，问题是日内的T0，基本上要千5的利润空间才会去做，但是，程序化即使千1的利润空间也能去做。</p><p>不妨考虑，一个股票，已知今天收盘前需要平仓，T0由于摩擦、交易成本等，需要千5的利润空间才会去做，因为我要卖出，买入，再卖出，但是程序交易，我只需要千1的空间，因为我只要找机会卖出即可。</p><p>那么随着市场的完善和成熟，高利润点，注定是先受到影响的。所以成熟市场，程序化交易受到的影响比T0要小。</p><p>最后，凡是能做T0的时间点，程序化交易也可以做。但是能做程序化的，T0不一定能做。具体参考上面的例子。</p><p>如果你有任何的见解，请与我联系：<strong><a href="mailto:qianniao0825@icloud.com">qianniao0825@icloud.com</a></strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> financial engineering </category>
+          
+          <category> T0 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> financial engineering </tag>
+            
+            <tag> T0 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>financial engineering</title>
+      <link href="/2020/05/18/financial-engineering/"/>
+      <url>/2020/05/18/financial-engineering/</url>
+      
+        <content type="html"><![CDATA[<p><strong>This is my first financial engineering-themed blog. Here I want to record a summary of my undergraduate thesis. The specific content can be obtained in the download link below.</strong></p><p>Financial risk is a concept that financial markets cannot ignore. After the 2008 financial crisis, research in this field reached its peak. In recent years, with the trend of trade protectionism and globalization, the market attaches great importance to financial risks. Therefore, it is necessary to carry out risk assessment of financial markets. The stock market is a barometer of the economy, so this paper chooses to make a risk assessment for the index of the stock market. First of all, the index (CSI 300) of the reciprocal income, as a label. Then, 523 sets of factors were extracted and designed, and after the factor effectiveness analysis, the distribution pattern was selected after the collinear processing. The 294 factors obtained were normalized and finally predicted by the LSTM model. At the same time, the prediction results are optimized, and the results after optimization are compared with the prediction results of undeleted, the prediction results of non-log labels, and the prediction results of multi-nonlinear regression, and the evaluation functions designed by themselves are used for analysis.  </p><p>The conclusion shows that in the financial market, logarithm label is more suitable for prediction than non-log label, the optimized LSTM prediction performance is better than multi-nonlinear regression, the evaluation function of design has a good evaluation of the forecast demand, and the necessity of collinear processing of factor data is demonstrated. The treatment of normalized, in this paper is more suitable for the prediction model.  </p><p>You can contact me via the following email: <a href="mailto:qianniao0825@icloud.com">qianniao0825@icloud.com</a></p><p><strong>Full text link</strong> <a href="benke.pdf">download</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> financial engineering </category>
+          
+          <category> financial risk </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> financial engineering </tag>
+            
+            <tag> paper </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>“Resources”</title>
+      <link href="/2020/05/18/%E2%80%9CResources%E2%80%9D/"/>
+      <url>/2020/05/18/%E2%80%9CResources%E2%80%9D/</url>
+      
+        <content type="html"><![CDATA[<p>Here, I will list some books on using and learning (some of them are written by myself). Hope it helps you.   </p><p><strong>Important:</strong> All books listed here are for learning use only. If you feel that some copyrights have been infringed, please contact me. You can contact me via the following email: <a href="mailto:qianniao0825@icloud.com">qianniao0825@icloud.com</a></p><p><strong>1.  SAS guide 9.4</strong> <a href="SAS9.4.pdf">download</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> free download </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Resources </tag>
+            
+            <tag> download </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+    
+    
+    <entry>
+      <title>about me</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[<p>Hello, this is augest-chen.<br>I am a researcher engaged in quantitative finance and modern statistics.<br>You can contact me via the following email: <a href="mailto:qianniao0825@icloud.com">qianniao0825@icloud.com</a><br>You are welcome to exchange any content with me about financial markets and modern statistics.<br>I also use some software: Python, Matlab, R, Mathematica, SAS. I will also write some summaries of my personal experience, which will be put in the blog, I hope these summaries will play a role for you.</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>tagscloud</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+  
+</search>
