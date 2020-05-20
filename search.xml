@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>technology</title>
+      <link href="/2020/05/21/technology/"/>
+      <url>/2020/05/21/technology/</url>
+      
+        <content type="html"><![CDATA[<p>matlab的一个知识点，先空着，明天补</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> technology </category>
+          
+          <category> matlab20200520 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> matlab </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>culture</title>
+      <link href="/2020/05/20/culture/"/>
+      <url>/2020/05/20/culture/</url>
+      
+        <content type="html"><![CDATA[<p>这里打算写点文化小知识和自己的一些所见闻吧。先空着，明天补</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> culture </category>
+          
+          <category> culture20200520 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> culture </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>lovestory</title>
       <link href="/2020/05/20/lovestory-1/"/>
       <url>/2020/05/20/lovestory-1/</url>
@@ -146,11 +200,11 @@
     
     
     <entry>
-      <title>about me</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<p>Hello, this is augest-chen.<br>I am a researcher engaged in quantitative finance and modern statistics.<br>You can contact me via the following email: <a href="mailto:qianniao0825@icloud.com">qianniao0825@icloud.com</a><br>You are welcome to exchange any content with me about financial markets and modern statistics.<br>I also use some software: Python, Matlab, R, Mathematica, SAS. I will also write some summaries of my personal experience, which will be put in the blog, I hope these summaries will play a role for you.</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -168,11 +222,11 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>about me</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>Hello, this is augest-chen.<br>I am a researcher engaged in quantitative finance and modern statistics.<br>You can contact me via the following email: <a href="mailto:qianniao0825@icloud.com">qianniao0825@icloud.com</a><br>You are welcome to exchange any content with me about financial markets and modern statistics.<br>I also use some software: Python, Matlab, R, Mathematica, SAS. I will also write some summaries of my personal experience, which will be put in the blog, I hope these summaries will play a role for you.</p>]]></content>
       
     </entry>
     
