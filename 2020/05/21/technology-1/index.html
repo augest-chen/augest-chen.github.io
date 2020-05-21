@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="data structure," />
 
 
 
@@ -79,15 +79,21 @@
 
 
 
+<meta name="description" content="考虑如下问题，需要在软件中输入一个3*3的矩阵，用以后续的计算，你会采用什么方式体现。 实际上可能大部分人想到的是：  但是，我们知道一些计算软件的列运算是行运算快很多的，典型的是matlab。 那么将第一列视为矩阵的行索引，第二列视为列索引，就可以得到以下的结果：  看起来似乎没有太大的变化，但是当遇到一个规模比较大的矩阵的时候，这样子的做法，其实是可以提高运算速度的。 此外，倘若延伸到三维数据">
 <meta property="og:type" content="article">
 <meta property="og:title" content="technology">
 <meta property="og:url" content="http://yoursite.com/2020/05/21/technology-1/index.html">
 <meta property="og:site_name" content="augest-chen">
+<meta property="og:description" content="考虑如下问题，需要在软件中输入一个3*3的矩阵，用以后续的计算，你会采用什么方式体现。 实际上可能大部分人想到的是：  但是，我们知道一些计算软件的列运算是行运算快很多的，典型的是matlab。 那么将第一列视为矩阵的行索引，第二列视为列索引，就可以得到以下的结果：  看起来似乎没有太大的变化，但是当遇到一个规模比较大的矩阵的时候，这样子的做法，其实是可以提高运算速度的。 此外，倘若延伸到三维数据">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/images/juzhen.PNG">
+<meta property="og:image" content="http://yoursite.com/images/juzhen2.PNG">
 <meta property="article:published_time" content="2020-05-21T03:53:16.000Z">
-<meta property="article:modified_time" content="2020-05-21T06:50:59.024Z">
+<meta property="article:modified_time" content="2020-05-21T12:46:14.244Z">
 <meta property="article:author" content="augest-chen">
+<meta property="article:tag" content="data structure">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/juzhen.PNG">
 
 
 
@@ -300,6 +306,39 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/technology/" itemprop="url" rel="index">
+                    <span itemprop="name">technology</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/technology/data-structure/" itemprop="url" rel="index">
+                    <span itemprop="name">data structure</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -327,7 +366,18 @@
       
 
       
-        
+        <p>考虑如下问题，需要在软件中输入一个3*3的矩阵，用以后续的计算，你会采用什么方式体现。</p>
+<p>实际上可能大部分人想到的是：</p>
+<p><img src="/images/juzhen.PNG" alt="alt"></p>
+<p>但是，我们知道一些计算软件的列运算是行运算快很多的，典型的是matlab。</p>
+<p>那么将第一列视为矩阵的行索引，第二列视为列索引，就可以得到以下的结果：</p>
+<p><img src="/images/juzhen2.PNG" alt="alt"></p>
+<p>看起来似乎没有太大的变化，但是当遇到一个规模比较大的矩阵的时候，这样子的做法，其实是可以提高运算速度的。</p>
+<p>此外，倘若延伸到三维数据，或者高维度的数据：</p>
+<p>在第一种方法中，已经较难表示了。</p>
+<p>但是在第二种方法中，只需要增加一列作为新的维度的索引，即可。</p>
+<p>python等基本思路是一样的，第二种方法，基本上都可以在大规模或者高维度的数据处理上，取得较好的计算效率。</p>
+
       
     </div>
     
@@ -341,6 +391,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/data-structure/" rel="tag"># data structure</a>
+          
+        </div>
       
 
       
@@ -360,6 +416,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/05/21/lovestory-2/" rel="prev" title="lovestory">
+                lovestory <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -431,7 +491,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -442,7 +502,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -453,7 +513,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
