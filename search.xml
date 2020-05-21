@@ -5,6 +5,19 @@
     
     <entry>
       <title>technology</title>
+      <link href="/2020/05/21/technology-1/"/>
+      <url>/2020/05/21/technology-1/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/.com//end.JPG" alt="alt"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>technology</title>
       <link href="/2020/05/21/technology/"/>
       <url>/2020/05/21/technology/</url>
       
@@ -62,7 +75,7 @@
       <link href="/2020/05/20/lovestory-1/"/>
       <url>/2020/05/20/lovestory-1/</url>
       
-        <content type="html"><![CDATA[<p>记录感情生活的第二天，今天2020.05.20，和yinan一起出去享受生活啦。</p><p>虽然yinan在前一天，叮咛了几百遍，让我别迟到，然后自己今天迟到了。让我一个人傻乎乎的在地铁站等她。有点生气的噢！</p><p>中午，去了食不食货，这家店还是挺不错的。尤其是这个是冰镇小龙虾，似乎是放了青红酒吧，也许是啤酒，觉得味道还可以，虾的个头也比较大。满足～</p><p><img src="shibushihuo.JPG" alt="alt"></p><p>可惜了龙骨感觉就一般了，我以为是烘箱烘的肉，结果却是腌制的，味道也一般吧。皮皮虾的个头倒是甚合我心。捞汁毛豆味道也比较有特色，具体形容起来就是，辣椒油混合了醋，再加点糖？感觉挺喜欢的这个口味的。</p><p>下午就去撸猫啦，yinan还忽悠我我，说是去鬼屋哈哈哈。以为我胆小吗？？</p><p><img src="maoshe1.JPG" alt="alt"></p><p><img src="maoshe2.JPG" alt="alt"></p><p>可惜，下午可能去的时候猫舍，猫猫们似乎都在晒太阳睡觉。不过还是挺可爱的。</p><p>最后是花鸟市场啦，展示一下下午的收获。</p><p>买给yinan的花儿</p><p><img src="hua1.JPG" alt="alt"></p><p>我的最爱郁金香</p><p><img src="hua3.jpg" alt="alt"></p><p>超大束的进口满天星</p><p><img src="hua2.jpg" alt="alt"></p><p>写到最后突然意识到，今天大概是在一起三年了。</p><p>也算得上是一人两花三年了</p><p><img src="end.JPG" alt="alt"></p>]]></content>
+        <content type="html"><![CDATA[<p>记录感情生活的第二天，今天2020.05.20，和yinan一起出去享受生活啦。</p><p>虽然yinan在前一天，叮咛了几百遍，让我别迟到，然后自己今天迟到了。让我一个人傻乎乎的在地铁站等她。有点生气的噢！</p><p>中午，去了食不食货，这家店还是挺不错的。尤其是这个是冰镇小龙虾，似乎是放了青红酒吧，也许是啤酒，觉得味道还可以，虾的个头也比较大。满足～</p><p><img src="/images/shibushihuo.JPG" alt="alt"></p><p>可惜了龙骨感觉就一般了，我以为是烘箱烘的肉，结果却是腌制的，味道也一般吧。皮皮虾的个头倒是甚合我心。捞汁毛豆味道也比较有特色，具体形容起来就是，辣椒油混合了醋，再加点糖？感觉挺喜欢的这个口味的。</p><p>下午就去撸猫啦，yinan还忽悠我我，说是去鬼屋哈哈哈。以为我胆小吗？？</p><p><img src="/images/maoshe1.JPG" alt="alt"></p><p><img src="/images/maoshe2.JPG" alt="alt"></p><p>可惜，下午可能去的时候猫舍，猫猫们似乎都在晒太阳睡觉。不过还是挺可爱的。</p><p>最后是花鸟市场啦，展示一下下午的收获。</p><p>买给yinan的花儿</p><p><img src="/images/hua1.JPG" alt="alt"></p><p>我的最爱郁金香</p><p><img src="/images/hua2.jpg" alt="alt"></p><p>超大束的进口满天星</p><p><img src="/images/hua3.jpg" alt="alt"></p><p>写到最后突然意识到，今天大概是在一起三年了。</p><p>也算得上是一人两花三年了</p><p><img src="/images/end.JPG" alt="alt"></p>]]></content>
       
       
       <categories>
@@ -145,7 +158,7 @@
       <link href="/2020/05/18/financial-engineering/"/>
       <url>/2020/05/18/financial-engineering/</url>
       
-        <content type="html"><![CDATA[<p><strong>This is my first financial engineering-themed blog. Here I want to record a summary of my undergraduate thesis. The specific content can be obtained in the download link below.</strong></p><p>Financial risk is a concept that financial markets cannot ignore. After the 2008 financial crisis, research in this field reached its peak. In recent years, with the trend of trade protectionism and globalization, the market attaches great importance to financial risks. Therefore, it is necessary to carry out risk assessment of financial markets. The stock market is a barometer of the economy, so this paper chooses to make a risk assessment for the index of the stock market. First of all, the index (CSI 300) of the reciprocal income, as a label. Then, 523 sets of factors were extracted and designed, and after the factor effectiveness analysis, the distribution pattern was selected after the collinear processing. The 294 factors obtained were normalized and finally predicted by the LSTM model. At the same time, the prediction results are optimized, and the results after optimization are compared with the prediction results of undeleted, the prediction results of non-log labels, and the prediction results of multi-nonlinear regression, and the evaluation functions designed by themselves are used for analysis.  </p><p>The conclusion shows that in the financial market, logarithm label is more suitable for prediction than non-log label, the optimized LSTM prediction performance is better than multi-nonlinear regression, the evaluation function of design has a good evaluation of the forecast demand, and the necessity of collinear processing of factor data is demonstrated. The treatment of normalized, in this paper is more suitable for the prediction model.  </p><p>You can contact me via the following email: <a href="mailto:qianniao0825@icloud.com">qianniao0825@icloud.com</a></p><p><strong>Full text link</strong> <a href="benke.pdf">download</a></p>]]></content>
+        <content type="html"><![CDATA[<p><strong>This is my first financial engineering-themed blog. Here I want to record a summary of my undergraduate thesis. The specific content can be obtained in the download link below.</strong></p><p>Financial risk is a concept that financial markets cannot ignore. After the 2008 financial crisis, research in this field reached its peak. In recent years, with the trend of trade protectionism and globalization, the market attaches great importance to financial risks. Therefore, it is necessary to carry out risk assessment of financial markets. The stock market is a barometer of the economy, so this paper chooses to make a risk assessment for the index of the stock market. First of all, the index (CSI 300) of the reciprocal income, as a label. Then, 523 sets of factors were extracted and designed, and after the factor effectiveness analysis, the distribution pattern was selected after the collinear processing. The 294 factors obtained were normalized and finally predicted by the LSTM model. At the same time, the prediction results are optimized, and the results after optimization are compared with the prediction results of undeleted, the prediction results of non-log labels, and the prediction results of multi-nonlinear regression, and the evaluation functions designed by themselves are used for analysis.  </p><p>The conclusion shows that in the financial market, logarithm label is more suitable for prediction than non-log label, the optimized LSTM prediction performance is better than multi-nonlinear regression, the evaluation function of design has a good evaluation of the forecast demand, and the necessity of collinear processing of factor data is demonstrated. The treatment of normalized, in this paper is more suitable for the prediction model.  </p><p>You can contact me via the following email: <a href="mailto:qianniao0825@icloud.com">qianniao0825@icloud.com</a></p><p><strong>Full text link</strong> <a href="/download/benke.pdf">download</a></p>]]></content>
       
       
       <categories>
@@ -174,7 +187,7 @@
       <link href="/2020/05/18/%E2%80%9CResources%E2%80%9D/"/>
       <url>/2020/05/18/%E2%80%9CResources%E2%80%9D/</url>
       
-        <content type="html"><![CDATA[<p>Here, I will list some books on using and learning (some of them are written by myself). Hope it helps you.   </p><p><strong>Important:</strong> All books listed here are for learning use only. If you feel that some copyrights have been infringed, please contact me. You can contact me via the following email: <a href="mailto:qianniao0825@icloud.com">qianniao0825@icloud.com</a></p><p><strong>1.  SAS guide 9.4</strong> <a href="SAS9.4.pdf">download</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Here, I will list some books on using and learning (some of them are written by myself). Hope it helps you.   </p><p><strong>Important:</strong> All books listed here are for learning use only. If you feel that some copyrights have been infringed, please contact me. You can contact me via the following email: <a href="mailto:qianniao0825@icloud.com">qianniao0825@icloud.com</a></p><p><strong>1.  SAS guide 9.4</strong> <a href="/download/SAS9.4.pdf">download</a></p>]]></content>
       
       
       <categories>
