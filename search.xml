@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>cyjournal</title>
+      <link href="/2020/05/24/cyjournal-1/"/>
+      <url>/2020/05/24/cyjournal-1/</url>
+      
+        <content type="html"><![CDATA[<p>今天和yinan终于见面了啦，2020在学校的第一次见面，着实有点久噢。新操场的微风和视野，的确也有点让人沉迷。yinan说还在在读一次大学，我说那你考本校呀，她说，我想和你一起读。哈哈哈这一句话让我暗自有点小幸福哈哈哈</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> storys </category>
+          
+          <category> 20200524 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>coursera 2st data management and visualization</title>
+      <link href="/2020/05/24/coursera-1/"/>
+      <url>/2020/05/24/coursera-1/</url>
+      
+        <content type="html"><![CDATA[<p>This is my assignment.</p><p><strong>code:</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">data = pd.read_csv(<span class="string">'dataset.csv'</span>)<span class="comment"># ge the garminder data i need</span></span><br><span class="line"></span><br><span class="line">print(data.shape[<span class="number">0</span>])<span class="comment"># number of observations(rows)</span></span><br><span class="line">print(data.shape[<span class="number">1</span>]) <span class="comment"># number of variables(columns)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">c1 = data[<span class="string">'country'</span>]</span><br><span class="line">c2 = data[<span class="string">'armedforcesrate'</span>]</span><br><span class="line">c3 = data[<span class="string">'femaleemployrate'</span>]</span><br><span class="line">c4 = data[<span class="string">'employrate'</span>]</span><br><span class="line">c5 = data[<span class="string">'hivrate'</span>]</span><br><span class="line"><span class="comment"># Separate the data I need into series</span></span><br><span class="line"></span><br><span class="line">aw = [c1,c2,c3,c4,c5] <span class="comment"># Convert data to a list</span></span><br><span class="line">result = [<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>] <span class="comment"># Form an empty list to store the results</span></span><br><span class="line"><span class="keyword">for</span> ii <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">5</span>): <span class="comment"># Generate a statistical table for each column</span></span><br><span class="line">    w = aw[ii] <span class="comment"># Gets the specified column</span></span><br><span class="line">    </span><br><span class="line">    df_show = pd.DataFrame(columns=[<span class="string">'frequency'</span>, <span class="string">'percent'</span>, <span class="string">'cumlativefrequency'</span>,<span class="string">'cumlativepercent'</span>])<span class="comment"># Create an empty dataframe</span></span><br><span class="line"></span><br><span class="line">    fc1 = pd.value_counts(w)<span class="comment"># Statistical frequency</span></span><br><span class="line">    df_show.index.name = fc1.index.name<span class="comment"># Match coordinate index</span></span><br><span class="line">    df_show[<span class="string">'frequency'</span>] = fc1 <span class="comment"># Data matching</span></span><br><span class="line"></span><br><span class="line">    fc2 = pd.value_counts(w,normalize = <span class="literal">True</span>) <span class="comment">#frequency</span></span><br><span class="line">    df_show[<span class="string">'percent'</span>] = fc2 <span class="comment">#Data matching</span></span><br><span class="line"></span><br><span class="line">    v2 =<span class="number">0</span>;<span class="comment"># Pre allocate memory, speed up</span></span><br><span class="line">    v1 =<span class="number">0</span>;<span class="comment"># Pre allocate memory, speed up</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,df_show.shape[<span class="number">0</span>]):<span class="comment"># Processing of accumulated data</span></span><br><span class="line"></span><br><span class="line">        v2 = v2 + df_show[<span class="string">'frequency'</span>].get(i) <span class="comment">#Take out data and accumulate</span></span><br><span class="line">        df_show.iat[i,<span class="number">2</span>] = v2 <span class="comment">#Store data</span></span><br><span class="line"></span><br><span class="line">        df_show.iat[i,<span class="number">1</span>] = df_show[<span class="string">'percent'</span>].get(i)*<span class="number">100</span> <span class="comment">#Convert data</span></span><br><span class="line">        v1 = v1 + df_show[<span class="string">'percent'</span>].get(i) <span class="comment">#Take out data and accumulate</span></span><br><span class="line">        df_show.iat[i,<span class="number">3</span>] = v1 <span class="comment"># Store data</span></span><br><span class="line"></span><br><span class="line">    print(df_show) <span class="comment">#show data</span></span><br><span class="line">    result[ii] = df_show <span class="comment"># Store result</span></span><br></pre></td></tr></table></figure><p><strong>console and analysis:</strong></p><p><img src="/images/re.png" alt="alt"></p><p>To be specific：</p><p><img src="/images/a1.png" alt="alt"></p><p>No missing data here. This data mainly shows all countries. It’s evenly distributed</p><p><img src="/images/a2.png" alt="alt"></p><p>Data for 49 countries are missing, accounting for 23% of the total. This means that there are 49 (23%) countries that do not show their share of the military.</p><p><img src="/images/a3.png" alt="alt"></p><p>Data from 35 countries are missing, accounting for 16.43% of the total. This means that 35 (16.43%) countries did not show their female employment rate.</p><p><img src="/images/a4.png" alt="alt"></p><p>Data from 35 countries are missing, accounting for 16.43% of the total. This means that there are 35 (16.43%) countries that do not show their overall employment rate.</p><p><img src="/images/a6.png" alt="alt"></p><p>Data from 66 countries are missing, accounting for 30.98% of the total. This means that there are 35 (30.98%) countries that do not show their HIV rate<br>Considering that my data is not classified data, I don’t do too much analysis on frequency here.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> coursera </category>
+          
+          <category> data management and visualization </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> coursera </tag>
+            
+            <tag> data management and visualization </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>负数开三次方根后出现复数问题</title>
       <link href="/2020/05/24/tech/"/>
       <url>/2020/05/24/tech/</url>
