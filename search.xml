@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>负数开三次方根后出现复数问题</title>
+      <link href="/2020/05/24/tech/"/>
+      <url>/2020/05/24/tech/</url>
+      
+        <content type="html"><![CDATA[<p>今天在做数值分析的时候，遇到一个有意思的情况。当我在python3.7中使用pow函数，对一个负数计算三次方根后，发现结果带有复数。具体结果如下：</p><p><img src="/images/py.png" alt="alt"></p><p>实际上为了验证是否是源代码出错，我又在mathematica上面做了一遍计算，结果如下：</p><p><img src="/images/mma.png" alt="alt"></p><p>那么根据两个软件的结果对比，应不是程序源码的问题。本质上这是一个数学问题：</p><p>首先，$ (x)^3 = -8 $，这是一个一元三次方根，根据一元n次方程的在复数领域内有n个根（n为正整数）。且复数的n次方根，可以直接得到如下的求解公式：</p><p><img src="/images/ma.png" alt="alt"></p><p>看到这里，我相信大部分就明白了，按道理这个计算是有三个结果的，但是计算机程序默认是选择了一个主值。具体根据计算机程序而已，有的会取（-pi，pi]。当然，对于主值的选择，一般是根据幅角最小来选择的。</p><p>关于如何展示所有结果，用mathematica的话：</p><p>cube root of -8</p><p>她就展示所有的结果。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> math </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>房产税</title>
       <link href="/2020/05/24/fiance/"/>
       <url>/2020/05/24/fiance/</url>
