@@ -4,6 +4,52 @@
   
     
     <entry>
+      <title>tech</title>
+      <link href="/2020/05/25/tech-1/"/>
+      <url>/2020/05/25/tech-1/</url>
+      
+        <content type="html"><![CDATA[<p>今天问yinan一个问题：0.3333……3333*3 = ？她告诉我是0.999……99。我差点晕倒。实际上精髓一点讲：这一个极限问题。换得通俗一点，她的数学水平应该是在高等数学以下的。因为本质上：lim0.99999999…=1。这就是说：1和0.9999…表示的是同一个数，只是表示方法的不同。证明如下：</p><p><img src="/images/th.png" alt="alt"></p><p>实际上，对于这个问题，扯点别的。对于这个问题有疑问的人，如果是大学以及以上的学生（接受过高等数学学习），我是觉得有些担忧的。具体如下：</p><p><img src="/images/thr.png" alt="alt"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> math </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cyjournal</title>
+      <link href="/2020/05/25/cyjournal-2/"/>
+      <url>/2020/05/25/cyjournal-2/</url>
+      
+        <content type="html"><![CDATA[<p>最近居然开始矛盾起来，又想快点毕业，又想不毕业。严重怀疑是不是一些哲学的视频看多了，导致心思太活跃了点。想的有点多？？by the way，强烈推荐一下李宗盛的《我是真的爱你》，总感觉李宗盛的声音比别的版本要好听那么一点。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> storys </category>
+          
+          <category> 20200525 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>cyjournal</title>
       <link href="/2020/05/24/cyjournal-1/"/>
       <url>/2020/05/24/cyjournal-1/</url>
