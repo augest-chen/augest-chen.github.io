@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>cyjournal</title>
+      <link href="/2020/05/26/cyjournal-3/"/>
+      <url>/2020/05/26/cyjournal-3/</url>
+      
+        <content type="html"><![CDATA[<p>有的时候，我也不敢相信我和yinan一天微信只发五个消息，也不见一面，即使都在学校。我们这个恋爱居然也就这么谈下去了。真是不可意思</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> storys </category>
+          
+          <category> 20200526 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cyJournal </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>IBM WASTON STUDIO 使用指南</title>
+      <link href="/2020/05/25/ibm/"/>
+      <url>/2020/05/25/ibm/</url>
+      
+        <content type="html"><![CDATA[<p>IBM Watson 是认知计算系统的杰出代表，也是一个技术平台。认知计算代表一种全新的计算模式，它包含信息分析，自然语言处理和机器学习领域的大量技术创新，能够助力决策者从大量非结构化数据中揭示非凡的洞察。简单来说，Watson能够支持如下方面，包括但不限于：理解自然语言、大数据的理解和分析、动态分析各类假设和问题、精细的个性化分析能力、在相关数据的基础上优化问题解答、在短时间内提炼洞察、发现新的运行模式、在迭代中学习，探索优化的解决方案、云端开发平台，支持生态发展</p><p>ibm官方在官网的放了ibm waston studio，兴趣使然想用一下，但是发现guide比较少。干脆自己写一个好了。先放一张官网的截图。</p><p><img src="/Users/chenjiahao/blog/source/images/ij.png" alt="alt"></p><p>需要注意的是ibm waston studio<br>待续</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> technology </category>
+          
+          <category> IBM WASTON STUDIO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IBM WASTON STUDIO </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>tech</title>
       <link href="/2020/05/25/tech-1/"/>
       <url>/2020/05/25/tech-1/</url>
@@ -45,6 +99,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> cyJournal </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -65,6 +125,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> cyJournal </tag>
+            
+        </tags>
       
     </entry>
     
