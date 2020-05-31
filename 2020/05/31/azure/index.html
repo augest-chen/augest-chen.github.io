@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Azure,Cloud computing," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="云计算会租用其他公司计算机上的存储空间或 CPU 周期等资源。 只需为所用的部分付费。 提供这些服务的公司称为云提供商。 某些提供商包括 Microsoft、Amazon 和 Google。 云提供商负责提供执行工作所需的物理硬件，并使其保持最新。 提供的计算服务往往因云提供商而异。 但是，它们通常包括：  计算能力 - 例如，Linux 服务器或 Web 应用程序 存储 - 例如，文件和数据库">
+<meta property="og:type" content="article">
+<meta property="og:title" content="云计算概论">
+<meta property="og:url" content="http://yoursite.com/2020/05/31/azure/index.html">
+<meta property="og:site_name" content="augest-chen">
+<meta property="og:description" content="云计算会租用其他公司计算机上的存储空间或 CPU 周期等资源。 只需为所用的部分付费。 提供这些服务的公司称为云提供商。 某些提供商包括 Microsoft、Amazon 和 Google。 云提供商负责提供执行工作所需的物理硬件，并使其保持最新。 提供的计算服务往往因云提供商而异。 但是，它们通常包括：  计算能力 - 例如，Linux 服务器或 Web 应用程序 存储 - 例如，文件和数据库">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/images/2-vm-vs-container-vs-serverless.png">
+<meta property="article:published_time" content="2020-05-31T13:23:19.000Z">
+<meta property="article:modified_time" content="2020-05-31T13:28:48.062Z">
+<meta property="article:author" content="augest-chen">
+<meta property="article:tag" content="Azure">
+<meta property="article:tag" content="Cloud computing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/2-vm-vs-container-vs-serverless.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/05/31/azure/"/>
+
+
+
+
+
+  <title>云计算概论 | augest-chen</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">augest-chen</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/31/azure/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="augest-chen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/a.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="augest-chen">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">云计算概论</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-31T21:23:19+08:00">
+                2020-05-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Cloud-computing/" itemprop="url" rel="index">
+                    <span itemprop="name">Cloud computing</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Cloud-computing/Azure/" itemprop="url" rel="index">
+                    <span itemprop="name">Azure</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>云计算会租用其他公司计算机上的存储空间或 CPU 周期等资源。 只需为所用的部分付费。 提供这些服务的公司称为云提供商。 某些提供商包括 Microsoft、Amazon 和 Google。</p>
+<p>云提供商负责提供执行工作所需的物理硬件，并使其保持最新。 提供的计算服务往往因云提供商而异。 但是，它们通常包括：</p>
+<ul>
+<li><strong>计算能力</strong> - 例如，Linux 服务器或 Web 应用程序</li>
+<li><strong>存储</strong> - 例如，文件和数据库</li>
+<li><strong>网络</strong> - 例如，云提供商和公司之间的安全连接</li>
+<li><strong>分析</strong>例如，可视化遥测和性能数据</li>
+</ul>
+<h2 id="云计算服务"><a href="#云计算服务" class="headerlink" title="云计算服务"></a>云计算服务</h2><p>云计算的目标是使企业开展业务更轻松、更高效，无论是小型初创企业还是大型企业。 每项业务都是独特的，有不同的需求。 为满足这些需求，云计算提供商提供广泛的服务。</p>
+<p>需要对其提供的一些服务有基本了解。 我们简要讨论所有云服务提供商都提供的两种最常见服务：–<em>计算能力<em>和</em>存储</em>。</p>
+<h3 id="计算能力"><a href="#计算能力" class="headerlink" title="计算能力"></a>计算能力</h3><p>发送一封电子邮件、在 Internet 上进行预订、在线付款、或甚至使用此 Microsoft Learn 模块时，你都在与处理每个请求并返回响应的基于云的服务器进行交互。 作为消费者，我们都依赖于组成 Internet 的各种云提供商提供的计算服务。</p>
+<p>使用云计算生成解决方案时，可以根据自己的资源和需求选择工作的完成方式。 例如，如果希望对维护拥有更多控制权并承担更多责任，则可以创建虚拟机 (VM)。 VM 是仿真计算机，与你正在使用的台式机或笔记本电脑相似。 每个 VM 都包括操作系统和硬件，在用户看来就像运行 Windows 或 Linux 的物理计算机一样。 然后，你可以安装任何所需的软件来执行要在云中运行的任务。</p>
+<p>不同之处在于，你无需购买任何硬件或安装操作系统。 云提供商在其中一个数据中心的物理服务器上运行虚拟机，通常与其他 VM 共享该服务器（独立且安全）。 借助云，你能够以比物理计算机更低的成本在数分钟内准备好 VM。</p>
+<p>VM 不是唯一的计算选择，还有两个其他常用选项：容器和无服务器计算。</p>
+<h4 id="什么是容器？"><a href="#什么是容器？" class="headerlink" title="什么是容器？"></a>什么是容器？</h4><p>容器为应用程序提供一致、独立的执行环境。 它们类似于 VM，但它们不需要来宾操作系统。 相反，应用程序及其所有依赖项都打包到“容器”中，然后使用标准运行时环境来执行应用。 这样，容器可以在数秒钟内启动，因为没有要启动和初始化的操作系统。 只需启动应用。</p>
+<p>开放源代码项目 Docker 是用于管理容器的领先平台之一。 Docker 容器为应用程序部署提供了一种高效、轻量级的方法，因为通过它们可将应用程序的不同组件独立部署到不同的容器中。 多个容器可以在一台计算机上运行，并且容器可以在计算机之间移动。 由于容器的可移植性，可以非常轻松地将应用程序部署到多个环境（无论是在本地还是在云中），通常无需对应用程序进行任何更改。</p>
+<h4 id="什么是无服务器计算？"><a href="#什么是无服务器计算？" class="headerlink" title="什么是无服务器计算？"></a>什么是无服务器计算？</h4><p>借助无服务器计算，无需创建、配置或维护服务器即可运行应用程序代码。 核心理念是将应用程序分为单独的函数，这些函数会在由某些操作触发时运行。 这是自动化任务的理想之选。例如，你可以构建无服务器进程，在客户进行在线购买后自动发送电子邮件确认。</p>
+<p>无服务器模型与 VM 和容器的不同之处在于，你只需为每个函数在执行时使用的处理时间付费。 VM 和容器运行时，即使其上的应用程序处于空闲状态，也会收取相应的费用。 此体系结构并不适用于每个应用 - 但是当应用逻辑可以分离到独立的单元时，可以单独对其进行测试和更新，并在数微秒内启动它们，从而使这种方法成为部署的最快选择。</p>
+<p>以下是比较我们介绍的三种计算方法的关系图。</p>
+<p><img src="/images/2-vm-vs-container-vs-serverless.png" alt="显示虚拟机、容器和无服务器计算的比较的关系图"></p>
+<h3 id="存储"><a href="#存储" class="headerlink" title="存储"></a>存储</h3><p>大多数设备和应用程序都会读取和/或写入数据。 下面是一些示例：</p>
+<ul>
+<li>在线购买电影票</li>
+<li>查询在线商品的价格</li>
+<li>拍摄照片</li>
+<li>发送电子邮件</li>
+<li>留语音邮件</li>
+</ul>
+<p>在以上所有案例中，不是读取数据（查询价格）就是写入数据（拍摄照片）。 在每种情况下，数据类型及其存储方式可能不同。</p>
+<p>云提供商通常会提供可处理所有这些类型的数据的服务。 例如，如果要存储文本或影片剪辑，则可以使用磁盘上的文件。 如果有一组关系（例如地址簿），可以采取一种更结构化的方法，比如使用数据库。</p>
+<p>使用基于云的数据存储的优点是可以缩放以满足需求。 如果发现需要更多空间来存储影片剪辑，则可以支付更多费用并增加可用空间。 在某些情况下，存储甚至可以自动进行扩展和缩放，因此你可以在任何给定的时间点为所需的内容付费。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>每项业务有不同的需求和要求。 云计算灵活且经济高效，不论是小型还是大型企业，均可由此受益。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Azure/" rel="tag"># Azure</a>
+          
+            <a href="/tags/Cloud-computing/" rel="tag"># Cloud computing</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/05/31/cyjournal-8/" rel="next" title="cyjournal">
+                <i class="fa fa-chevron-left"></i> cyjournal
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/a.jpg"
+                alt="augest-chen" />
+            
+              <p class="site-author-name" itemprop="name">augest-chen</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">34</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#云计算服务"><span class="nav-number">1.</span> <span class="nav-text">云计算服务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#计算能力"><span class="nav-number">1.1.</span> <span class="nav-text">计算能力</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是容器？"><span class="nav-number">1.1.1.</span> <span class="nav-text">什么是容器？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是无服务器计算？"><span class="nav-number">1.1.2.</span> <span class="nav-text">什么是无服务器计算？</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#存储"><span class="nav-number">1.2.</span> <span class="nav-text">存储</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">2.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">augest-chen</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
