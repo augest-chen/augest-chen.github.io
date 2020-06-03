@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="edx,thu,data science," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="数据挖掘：理论与算法 | Data Mining: Theories and Algorithms for Tackling Big Data第一部分：走进数据 这一部分基本是简单的介绍，我就稍微选几个我觉得是重点的吧。需要理解什么是data rich information poor。 其次，一些教材推荐： 1.数据挖掘：概念与技术 2.模式分类，3.beautiful data （这本书案例多">
+<meta property="og:type" content="article">
+<meta property="og:title" content="清华｜数据科学 1st">
+<meta property="og:url" content="http://yoursite.com/2020/06/03/edx/index.html">
+<meta property="og:site_name" content="augest-chen">
+<meta property="og:description" content="数据挖掘：理论与算法 | Data Mining: Theories and Algorithms for Tackling Big Data第一部分：走进数据 这一部分基本是简单的介绍，我就稍微选几个我觉得是重点的吧。需要理解什么是data rich information poor。 其次，一些教材推荐： 1.数据挖掘：概念与技术 2.模式分类，3.beautiful data （这本书案例多">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/images/datamining.png">
+<meta property="og:image" content="http://yoursite.com/images/bigdata.png">
+<meta property="og:image" content="http://yoursite.com/images/opendataset.png">
+<meta property="article:published_time" content="2020-06-03T05:36:04.000Z">
+<meta property="article:modified_time" content="2020-06-03T09:38:24.991Z">
+<meta property="article:author" content="augest-chen">
+<meta property="article:tag" content="edx">
+<meta property="article:tag" content="thu">
+<meta property="article:tag" content="data science">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/datamining.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/06/03/edx/"/>
+
+
+
+
+
+  <title>清华｜数据科学 1st | augest-chen</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">augest-chen</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/03/edx/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="augest-chen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/a.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="augest-chen">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">清华｜数据科学 1st</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-03T13:36:04+08:00">
+                2020-06-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/edx/" itemprop="url" rel="index">
+                    <span itemprop="name">edx</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/edx/thu-data-science/" itemprop="url" rel="index">
+                    <span itemprop="name">thu data science</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="数据挖掘：理论与算法-Data-Mining-Theories-and-Algorithms-for-Tackling-Big-Data"><a href="#数据挖掘：理论与算法-Data-Mining-Theories-and-Algorithms-for-Tackling-Big-Data" class="headerlink" title="数据挖掘：理论与算法 | Data Mining: Theories and Algorithms for Tackling Big Data"></a>数据挖掘：理论与算法 | Data Mining: Theories and Algorithms for Tackling Big Data</h2><p><strong>第一部分：走进数据</strong></p>
+<p>这一部分基本是简单的介绍，我就稍微选几个我觉得是重点的吧。需要理解什么是data rich information poor。</p>
+<p><strong>其次，一些教材推荐：</strong></p>
+<p>1.数据挖掘：概念与技术</p>
+<p>2.模式分类，3.beautiful data （这本书案例多，可以拓展思路）4.data mining：practical machine learning tools and techniques 5. introduction to data mining</p>
+<p><strong>以及需要关注一些国际会议的论文：</strong></p>
+<p>international conference on data mining</p>
+<p>international conference on data engineering</p>
+<p>international conference on machine learning</p>
+<p>international joint conference on artificial intelligence</p>
+<p>Pacific-asia conference on knowledge discovery and data mining</p>
+<p>ACM SIGKDD conference on knowledge discovery and data mining</p>
+<p>ieee transaction knowledge and data engineering</p>
+<p>ieee transaction neural newtworks and learning systems</p>
+<p>data mining and konwledge discovery</p>
+<p>information sciences</p>
+<p><strong>两个协会：</strong></p>
+<p>ieee computiatioal intelligence society</p>
+<p>ieee computer society</p>
+<p><strong>几个华人学者的实验室官网，关注其进度：</strong></p>
+<p>xindong wu</p>
+<p>zhihua zhou</p>
+<p>jiawei han</p>
+<p>jian pei</p>
+<p>qiang yang</p>
+<p>chih-jen lin</p>
+<p>philip s. yu</p>
+<p>changshui zhang</p>
+<p><strong>一些工具的推荐：</strong></p>
+<p>1.检索类：</p>
+<p>Wikipedia</p>
+<p>google </p>
+<p>google scholar</p>
+<p>kddnuggest 专门的数据挖掘网站</p>
+<p>2.工具类</p>
+<p>matlab 的 app</p>
+<p>machine learning repository 上的公开数据集</p>
+<p>weka 这是一款开源的数据挖掘软件</p>
+<p>数据挖掘的广义概念如下图：</p>
+<p><img src="/images/datamining.png" alt="alt"></p>
+<p><strong>第二部分：数据</strong></p>
+<p>数据的定义（粗略的）：定量、定型化的属性值。数据是底层的一种表现形式，信息是高一层的。数据处理后的，才能叫做信息。数据不同类型，连续型的(continues)，二值型(binary)的。存储上，数据又可以分为逻辑下那型和物理层面的。物理上都是01的，但是逻辑上，可以是二维表等。在实际数据分析工作中，数据类型转换和数据自身的错误是面临的主要挑战之一。</p>
+<p>big data ： gartner的定义：数据量大，速度快（产生速度），数据种类多（千奇百怪）/mckinsey：超过传统数据处理的能力的数据</p>
+<p>三个特点：</p>
+<p>1.结构化变为非结构化</p>
+<p>2.batch变为数据流</p>
+<p>3.数据变大了</p>
+<p><img src="/images/bigdata.png" alt="alt"></p>
+<p>大数据应用：</p>
+<p>1.公共安全：预防犯罪</p>
+<p>2.医疗健康：undertreat &amp; overtreat、 基因</p>
+<p>3.城市规划：智慧城市</p>
+<p>4.地理位置：定位、商店购物</p>
+<p>5.情感分析：sentiment amalysis</p>
+<p>6.社交网站：</p>
+<p>7.点球成金；</p>
+<p><strong>第三部分：数据到知识</strong></p>
+<p>开放数据，难以获得，因此，产生了数据孤岛。有一种趋势就是去打破这些数据孤岛。也就是数据公开。公开数据有两个要求：1.技术公开(可公开，易获得)，2.法律公开（开放，公开）。</p>
+<p>以下有可获得公开数据的来源：</p>
+<p><img src="/images/opendataset.png" alt="alt"></p>
+<p>此外，补充一个政府数据公开的网站：</p>
+<p><a href="https://www.data.gov/" target="_blank" rel="noopener">美国政府公开数据网站</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/edx/" rel="tag"># edx</a>
+          
+            <a href="/tags/thu/" rel="tag"># thu</a>
+          
+            <a href="/tags/data-science/" rel="tag"># data science</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/06/02/cyjournal-10/" rel="next" title="cyjournal">
+                <i class="fa fa-chevron-left"></i> cyjournal
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/a.jpg"
+                alt="augest-chen" />
+            
+              <p class="site-author-name" itemprop="name">augest-chen</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">34</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">39</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据挖掘：理论与算法-Data-Mining-Theories-and-Algorithms-for-Tackling-Big-Data"><span class="nav-number">1.</span> <span class="nav-text">数据挖掘：理论与算法 | Data Mining: Theories and Algorithms for Tackling Big Data</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">augest-chen</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

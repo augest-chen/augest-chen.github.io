@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>清华｜数据科学 1st</title>
+      <link href="/2020/06/03/edx/"/>
+      <url>/2020/06/03/edx/</url>
+      
+        <content type="html"><![CDATA[<h2 id="数据挖掘：理论与算法-Data-Mining-Theories-and-Algorithms-for-Tackling-Big-Data"><a href="#数据挖掘：理论与算法-Data-Mining-Theories-and-Algorithms-for-Tackling-Big-Data" class="headerlink" title="数据挖掘：理论与算法 | Data Mining: Theories and Algorithms for Tackling Big Data"></a>数据挖掘：理论与算法 | Data Mining: Theories and Algorithms for Tackling Big Data</h2><p><strong>第一部分：走进数据</strong></p><p>这一部分基本是简单的介绍，我就稍微选几个我觉得是重点的吧。需要理解什么是data rich information poor。</p><p><strong>其次，一些教材推荐：</strong></p><p>1.数据挖掘：概念与技术</p><p>2.模式分类，3.beautiful data （这本书案例多，可以拓展思路）4.data mining：practical machine learning tools and techniques 5. introduction to data mining</p><p><strong>以及需要关注一些国际会议的论文：</strong></p><p>international conference on data mining</p><p>international conference on data engineering</p><p>international conference on machine learning</p><p>international joint conference on artificial intelligence</p><p>Pacific-asia conference on knowledge discovery and data mining</p><p>ACM SIGKDD conference on knowledge discovery and data mining</p><p>ieee transaction knowledge and data engineering</p><p>ieee transaction neural newtworks and learning systems</p><p>data mining and konwledge discovery</p><p>information sciences</p><p><strong>两个协会：</strong></p><p>ieee computiatioal intelligence society</p><p>ieee computer society</p><p><strong>几个华人学者的实验室官网，关注其进度：</strong></p><p>xindong wu</p><p>zhihua zhou</p><p>jiawei han</p><p>jian pei</p><p>qiang yang</p><p>chih-jen lin</p><p>philip s. yu</p><p>changshui zhang</p><p><strong>一些工具的推荐：</strong></p><p>1.检索类：</p><p>Wikipedia</p><p>google </p><p>google scholar</p><p>kddnuggest 专门的数据挖掘网站</p><p>2.工具类</p><p>matlab 的 app</p><p>machine learning repository 上的公开数据集</p><p>weka 这是一款开源的数据挖掘软件</p><p>数据挖掘的广义概念如下图：</p><p><img src="/images/datamining.png" alt="alt"></p><p><strong>第二部分：数据</strong></p><p>数据的定义（粗略的）：定量、定型化的属性值。数据是底层的一种表现形式，信息是高一层的。数据处理后的，才能叫做信息。数据不同类型，连续型的(continues)，二值型(binary)的。存储上，数据又可以分为逻辑下那型和物理层面的。物理上都是01的，但是逻辑上，可以是二维表等。在实际数据分析工作中，数据类型转换和数据自身的错误是面临的主要挑战之一。</p><p>big data ： gartner的定义：数据量大，速度快（产生速度），数据种类多（千奇百怪）/mckinsey：超过传统数据处理的能力的数据</p><p>三个特点：</p><p>1.结构化变为非结构化</p><p>2.batch变为数据流</p><p>3.数据变大了</p><p><img src="/images/bigdata.png" alt="alt"></p><p>大数据应用：</p><p>1.公共安全：预防犯罪</p><p>2.医疗健康：undertreat &amp; overtreat、 基因</p><p>3.城市规划：智慧城市</p><p>4.地理位置：定位、商店购物</p><p>5.情感分析：sentiment amalysis</p><p>6.社交网站：</p><p>7.点球成金；</p><p><strong>第三部分：数据到知识</strong></p><p>开放数据，难以获得，因此，产生了数据孤岛。有一种趋势就是去打破这些数据孤岛。也就是数据公开。公开数据有两个要求：1.技术公开(可公开，易获得)，2.法律公开（开放，公开）。</p><p>以下有可获得公开数据的来源：</p><p><img src="/images/opendataset.png" alt="alt"></p><p>此外，补充一个政府数据公开的网站：</p><p><a href="https://www.data.gov/" target="_blank" rel="noopener">美国政府公开数据网站</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> edx </category>
+          
+          <category> thu data science </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> edx </tag>
+            
+            <tag> thu </tag>
+            
+            <tag> data science </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>cyjournal</title>
       <link href="/2020/06/02/cyjournal-10/"/>
       <url>/2020/06/02/cyjournal-10/</url>
@@ -939,6 +970,17 @@
       <url>/about/index.html</url>
       
         <content type="html"><![CDATA[<p>Hello, this is augest-chen.<br>I am a researcher engaged in quantitative finance and modern statistics.<br>You can contact me via the following email: <a href="mailto:qianniao0825@icloud.com">qianniao0825@icloud.com</a><br>You are welcome to exchange any content with me about financial markets and modern statistics.<br>I also use some software: Python, Matlab, R, Mathematica, SAS. I will also write some summaries of my personal experience, which will be put in the blog, I hope these summaries will play a role for you.</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/baidu_verify_mt1uVtI4Qf.html"/>
+      <url>/baidu_verify_mt1uVtI4Qf.html</url>
+      
+        <content type="html"><![CDATA[mt1uVtI4Qf]]></content>
       
     </entry>
     
