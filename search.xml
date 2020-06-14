@@ -4,6 +4,64 @@
   
     
     <entry>
+      <title>Financial Engineering and Risk Management</title>
+      <link href="/2020/06/14/coursera-13/"/>
+      <url>/2020/06/14/coursera-13/</url>
+      
+        <content type="html"><![CDATA[<h2 id="P1"><a href="#P1" class="headerlink" title="P1"></a><strong>P1</strong></h2><h3 id="week-1"><a href="#week-1" class="headerlink" title="week 1"></a><strong>week 1</strong></h3><p>In this module, we’re going to give you a brief overview of the entire course of Financial Engineering and Risk Management. We’ll introduce the ideas of financial markets, financial products, what do financial markets and financial<br>products do for you. We’ll introduce the ideas of the main problems in financial engineering, and how these relate to the different issues that come up in practical application financial engineering and risk management. Why do we need financial markets? Financial markets enable efficient allocation of resources both across time, and across states of nature. What do you mean by across time? What we mean is, that you have income available today, but you want to allocate that income for sometime in the future. You have income available today, but tomorrow the states of nature are uncertain. You don’t know whether you would have income available there. You don’t know what your costs are going<br>to be in the future. Depending upon various events happening, you might need more or less amount of funds. And financial markets allow you the possibility of taking funds that are available today, move them across time, and move them across to states of nature that are uncertain. A young worker with a high salary right now, what should she do? If there are financial markets available, she could invest in stocks and bonds to finance retirement, home ownership, education and so on. If there were no financial markets available, she would have such as, a home car and so on. But she’s not going to be able to move that later on in time to have them available when the states of nature are not good. This idea of states of nature actually becomes more clearer if you consider the example of a farmer producing oranges. The farmer is producing oranges, and she is open to the risk of the price of orange when she produced when he product gets ready and it goes into the market. If there were financial markets available, as they are right now, she could hedge the price of the oranges in the future using the futures market. She could also buy vetter related derivatives, and use these derivatives to protect against the possibility of her produce going bad as a result of freeze, and so on. If there were no financial markets available, she would be open to the vagaries of the spot market. She can not hedge the price, nor can she hedge against the uncertainty of a produce not coming through, because<br>of some weather-related emergency. What do markets do? They essentially do three things. They gather information. Markets are a place where buyers and sellers come together. They take action based on their information. This information gets aggregated, and that aggregated information gets deflected in the price of the product. And in some sense, this information gathering is necessary in order for a fair price to be created. It aggregates liquidity, so there are many buyers and sellers for a particular product. If there was no market, the buyers and the sellers would have to go looking for a counter party. Looking for a person who wants to take the opposite position. With a market, all the buyers and sellers come together, the liquidity gets aggregated, and as a result, the, both the buyers and sellers get a better price. By gathering information and by gathering liquidity, markets introduce or promote efficiency and fairness. What about products? Financial products are created to satisfy needs. New products hedge risk. They also allow for speculation. Products allow to, one to raise funds for an operation, for example, using by, by issuing shares and an IPO. They also allow you to fund liabilities. Financial markets can be modeled in several different ways. There are two standard market models that are out there. One of them is called a discrete time model, in which time goes forward in discrete steps. There are single period discrete time models and there are multiperiod discrete time models. The other class of model is called continuous time models. Continuous time models, time does not ad, advance discretely but in a continuous fashion. The pros and cons of discrete time models are as follows. The good thing about a discrete time model is that it’s simple. We can introduce all important concepts with very easy mathematics. Much less sophisticated mathematics than is necessary for the continuous time model. The problem with discrete time models is there are no closed form solutions possible. Solutions are not as elegant as those available for continuous time models, and one has to resort to numerical calculations. This used to be a problem when computation was hard, and you couldn’t do sophisticated comput, computation on simple machines. But as the price of computers have been coming down, people have tended to move more and more into discrete timemodels because they are simpler. You can introduce all kinds of interesting effects and compute them, rather than trying to look for a closed form solution. The focus of this course will be on discrete time multi-period models. We want to keep the mathematics simple, and yet be able to introduce all the concepts that are necessary, for you to understand financial engineering and risk management. There is a little bit of a caveat. Very, very few continuous time concepts will be used. For example, the Black-Scholes formula,which comes from continuous time analysis will be introduced because this is a very classic formula. And anyone graduating from a course on financial engineering and risk management, ought to know this formula. Another topic that’s of interest, is what’s the difference between financial economics and financial engineering. Financial economics is concerned with using equilibrium concepts to price something called primary assets. These are equities, bonds, interest rates, and so on. Financially engineering on the other hand assumes the price of the primary assets such that equities and interest rates are given. And the focus of this field is on pricing derivatives and these primary assets using the no arbitrage condition. But these distinction between financial economics and financial engineering is by no means a complete separation. For example, the capital asset pricing model, which prices assets is of interest to both financial engineering and financial economics. There are three central problems of Financial Engineering. Security pricing, portfolio selection, and risk management. The main focus of security pricing is to price derivative securities such as forwards, swaps, futures, and options on the<br>underlying primary securities using the no arbitrage condition. The focus of portfolio selection, is to choose a trading strategy to maximize the utility of<br>consumption and final wealth. It turns out that portfolio selection is very intimately related to security pricing, and this will become clearer as we go through the course. Single-period models, such as Markowitz portfolio selection, are very widely used in industry. Multi-period models are much harder, but starting to get more traction. There’s also the issue of pricing and using real options, such as options on gas pipelines, oil leases, and mines. These are also part of a portfolio selection strategy. The third important topic is risk management. And the goal of this area is to understand the risks inherent in the portfolio. Here, we are not trying to choose a portfolio, the portfolio is already given. We just want to stress test the, the portfolio to understand how it performs in different market conditions. The important topics that come up in risk management are tail risk, which is a probability of large losses. Two risk measures that have become very important for tail risk, are the value at risk and the condition of value at risk. These two risk measures were introduced for risk management, but have started to become much more important for portfolio selection as well. Financial engineering has led to some very interesting problems in applied math and operations research. For example, how does a company manage its operational risks using financial products? This is a marriage between supply chain management one side, which is one of the core ideas in operations research. And financial engineering on the other side, which talks about risk management and portfolio selection. You bring the two together, and now you have the possibility of hedging operational risks, which have got nothing to do with financial engineering per se, and combining them with financial products to get an idea of how one could hedge the risk across different areas.</p><p> <a href="[https://augest-chen.github.io/2020/05/18/%E2%80%9CResources%E2%80%9D/](https://augest-chen.github.io/2020/05/18/" resources" )">overview ppt</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> coursera </category>
+          
+          <category> Financial Engineering and Risk Management </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> coursera </tag>
+            
+            <tag> Financial Engineering and Risk Management </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Financial Markets</title>
+      <link href="/2020/06/14/coursera-12/"/>
+      <url>/2020/06/14/coursera-12/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> coursera </category>
+          
+          <category> Financial Markets </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> coursera </tag>
+            
+            <tag> Financial Markets </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>wirte and publish a scientific paper</title>
       <link href="/2020/06/14/coursera-11/"/>
       <url>/2020/06/14/coursera-11/</url>
@@ -1357,7 +1415,7 @@
       <link href="/2020/05/18/%E2%80%9CResources%E2%80%9D/"/>
       <url>/2020/05/18/%E2%80%9CResources%E2%80%9D/</url>
       
-        <content type="html"><![CDATA[<p>Here, I will list some books on using and learning (some of them are written by myself). Hope it helps you.   </p><p><strong>Important:</strong> All books listed here are for learning use only. If you feel that some copyrights have been infringed, please contact me. You can contact me via the following email: <a href="mailto:qianniao0825@icloud.com">qianniao0825@icloud.com</a></p><p><strong>1.  SAS guide 9.4</strong> <a href="/download/SAS9.4.pdf">download</a></p><p><strong>2. Mathematics for Computer Science（MIT2015）</strong><a href="/download/Mcs.pdf">download</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Here, I will list some books on using and learning (some of them are written by myself). Hope it helps you.   </p><p><strong>Important:</strong> All books listed here are for learning use only. If you feel that some copyrights have been infringed, please contact me. You can contact me via the following email: <a href="mailto:qianniao0825@icloud.com">qianniao0825@icloud.com</a></p><p><strong>1.  SAS guide 9.4</strong> <a href="/download/SAS9.4.pdf">download</a></p><p><strong>2. Mathematics for Computer Science（MIT2015）</strong><a href="/download/Mcs.pdf">download</a></p><p><strong>3. Financial Engineering and Risk Management Overview （columbia 2012）</strong><a href="/download/overview.pdf">download</a></p>]]></content>
       
       
       <categories>
