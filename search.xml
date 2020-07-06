@@ -5,10 +5,37 @@
     
     <entry>
       <title>cyjournal</title>
+      <link href="/2020/07/06/cyjournal-44/"/>
+      <url>/2020/07/06/cyjournal-44/</url>
+      
+        <content type="html"><![CDATA[<p>今天是6号，支部开会结束，选出了新的一届支部委员会。我的副书记任职，也到期了。一开始只是感慨，感慨自己大四还担任这个职务，居然也就这么过来了。好几次忙到爆炸，但是却也是坚持下来了。但是在移交完工作后，hc过来私发了我信息，说，想哭。舍不得，半夜发消息给我说明天有什么工作的时候。我也不禁鼻子一酸。hc作为我的助理，的确给了很多帮助。其实很多时候，真的就是两个人都很忙的情况下，选一个不忙的人去做事。诶，和hc的很多事情，一言两语真的说不完，那种类似并肩作战的感觉，真的挺让人感动的。也祝愿hc能去到好学校继续深造吧。加油hc。</p><p>移交完工作，爷青结。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> storys </category>
+          
+          <category> 20200706 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cyJournal </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cyjournal</title>
       <link href="/2020/07/05/cyjournal-43/"/>
       <url>/2020/07/05/cyjournal-43/</url>
       
-        <content type="html"><![CDATA[<p>计算神经学、认知神经科学，看文献看得我脑子疼。</p>]]></content>
+        <content type="html"><![CDATA[<p>实际上，应该每天运动一下。不能老是沉浸在自己的世界里。决定立个flag，每天运动一个小时。</p>]]></content>
       
       
       <categories>
@@ -58,13 +85,33 @@
     
     
     <entry>
-      <title>coursera</title>
+      <title>Google Cloud &amp; New York Institute of Finance Introduction to Trading, Machine Learning &amp; GCP</title>
       <link href="/2020/07/04/coursera-25/"/>
       <url>/2020/07/04/coursera-25/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>In this course we will be focused on Supervised machine learning models which means we know the answer (the ‘label’) for the past that we can train our model to learn from.</p><p>The first model type you will use in this course is Regression. Regression can be used for all types of ML use cases like predicting sales (Linear Regression) to classifying buy or no-buy (Logistic Regression AKA classification). You’ll practice building your first ML model to predict stock price values using a quick regression model with BigQuery ML.</p><p>What follows this is a quick Python skills assessment to see if you pass the required fundamentals for the labs – feel free to use Google Search and any other guides as you work through the questions.</p><p>Looking for more ML resources before you continue your models here?</p><p>For a more in-depth discussion of model types and introductory machine learning concepts (independent of Finance) please see:</p><p><a href="https://www.coursera.org/specializations/machine-learning-tensorflow-gcp" target="_blank" rel="noopener">https://www.coursera.org/specializations/machine-learning-tensorflow-gcp</a> from Google Cloud<br>Machine Learning with Andrew Ng</p><p>We designed this course for finance, investment management and trading professionals. Machine learning and data science professionals, who are interested in applying their skills to developing trading strategies, can also benefit from this course. For those of you who are new to trading and investing, a brief introduction to these areas is included at the beginning of this course. It would also be helpful to have a basic understanding of financial markets (equities, bonds, derivatives, market structure, and hedging). </p><p>We recommend that you have a basic familiarity with machine learning and Python before taking this course. Consider taking the below or previewing the topics:</p><p>5 course series on Machine Learning with Google Cloud<br>If you feel you need a more comprehensive introduction to financial markets, Coursera offers:</p><p>“The Role of Global Financial Markets” at <a href="https://www.coursera.org/learn/capital-markets" target="_blank" rel="noopener">https://www.coursera.org/learn/capital-markets</a> The first two weeks (6 hours) of this four-week course should be sufficient.<br>To be successful in this course, you should have a basic competency in Python programming and familiarity with pertinent libraries for machine learning, such as Scikit-Learn, StatsModels, and Pandas. If you passed the Python pre-test then you should not have any difficulties completing the Jupyter notebooks and QwikLabs that are used throughout the courses. Experience with SQL will be helpful, but is not required. You should also have a background in statistics (expected values and standard deviation, Gaussian distributions, higher moments, probability, linear regressions).</p><p>At the end of the course you will be able to do the following:</p><p>Distinguish between trading and investing<br>Understand the fundamentals of trading, including the concept of trend, returns, stop-loss and volatility<br>Identify the main trading strategy categories in the Quant universe<br>Understand the function of each component of a quant strategy<br>Identify the key strengths and weaknesses of quant strategies<br>Understand the steps in executing an exchange or statistical arbitrage<br>Identify the components and infrastructure needs of an index arbitrage strategy<br>Understand the goals of the backtesting validation technique<br>Identify the steps in creating a split-data backtesting model<br>Identify the steps in designing a sliding-window backtesting model<br>Understand some of the weaknesses and biases that can affect a backtest<br>Distinguish between development and implementation backtesting models<br>Understand the differences between supervised/unsupervised and regression/classification machine learning models<br>Identify the profit source and structure of basic quantitative trading strategies<br>Gauge how well a machine learning model generalizes its learning<br>Explain the differences between regression and forecasting<br>Use Google Cloud Platform to build basic machine learning models in Jupyter Notebooks<br>Understand the opportunities and limitations of statistical arbitrage</p><p>What areas of capital markets are using cloud computing for competitive advantage?</p><p>See the solutions and case studies here: <a href="https://cloud.google.com/solutions/financial-services/capital-markets" target="_blank" rel="noopener">https://cloud.google.com/solutions/financial-services/capital-markets</a></p><p>Pick an area of capital markets (research, risk, regulatory, etc) and find a Google Cloud customer in that area and answer these questions about their solution</p><ul><li>What challenge in finance is being solved for?</li><li>Why did this customer turn to cloud computing?</li><li>What products, services, hardware are mentioned?</li><li>What model types / ML approaches are mentioned?</li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> coursera </category>
+          
+          <category> Introduction to Trading, Machine Learning &amp; GCP </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> coursera </tag>
+            
+            <tag> Introduction to Trading </tag>
+            
+            <tag> Machine Learning &amp; GCP </tag>
+            
+            <tag> Google Cloud &amp; New York Institute of Finance </tag>
+            
+        </tags>
       
     </entry>
     
@@ -82,7 +129,7 @@
           
           <category> coursera </category>
           
-          <category> National Research University Higher School of Economics </category>
+          <category> Public Economics </category>
           
       </categories>
       
