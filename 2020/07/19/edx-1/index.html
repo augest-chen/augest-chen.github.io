@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="xDxeiN8UNesdSzXA443HQ-Oo_3g__1XDd8szZhVPjgg" />
+
+
+
+  <meta name="msvalidate.01" content="true" />
+
+
+
+  <meta name="yandex-verification" content="true" />
+
+
+
+
+  <meta name="baidu-site-verification" content="mt1uVtI4Qf" />
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="edx,tsinghua,[object Object],data science professional certificate," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="数据挖掘：理论与算法 | Data Mining: Theories and Algorithms for Tackling Big Data第一部分走进数据这一部分基本是简单的介绍，我就稍微选几个我觉得是重点的吧。需要理解什么是data rich information poor。 其次，一些教材推荐： 1.数据挖掘：概念与技术 2.模式分类，3.beautiful data （这本书案例多，可">
+<meta property="og:type" content="article">
+<meta property="og:title" content="tsinghua Data Mining Theories and Algorithms for Tackling Big Data">
+<meta property="og:url" content="https://augest-chen.github.io/2020/07/19/edx-1/index.html">
+<meta property="og:site_name" content="augest-chen">
+<meta property="og:description" content="数据挖掘：理论与算法 | Data Mining: Theories and Algorithms for Tackling Big Data第一部分走进数据这一部分基本是简单的介绍，我就稍微选几个我觉得是重点的吧。需要理解什么是data rich information poor。 其次，一些教材推荐： 1.数据挖掘：概念与技术 2.模式分类，3.beautiful data （这本书案例多，可">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://augest-chen.github.io/images/datamining.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/bigdata.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/opendataset.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/liuc.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/qiye.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/lilun.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/classexample.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/classexample2.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/fenleiqi.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/liuchengtu.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/hunxiaojuzhen.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/nanrennvrenwenti.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/fenleiqi2.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/reg.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/vs.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/qs.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/clear.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/yinsi.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/wenjuan.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/summm.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/nas.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/caipiao.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/neizai.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/shijian.png">
+<meta property="article:published_time" content="2020-07-19T14:01:36.000Z">
+<meta property="article:modified_time" content="2020-07-19T14:09:59.688Z">
+<meta property="article:author" content="augest-chen">
+<meta property="article:tag" content="edx">
+<meta property="article:tag" content="tsinghua">
+<meta property="article:tag" content="[object Object]">
+<meta property="article:tag" content="data science professional certificate">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://augest-chen.github.io/images/datamining.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://augest-chen.github.io/2020/07/19/edx-1/"/>
+
+
+
+
+
+  <title>tsinghua Data Mining Theories and Algorithms for Tackling Big Data | augest-chen</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">augest-chen</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            Schedule
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            Sitemap
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://augest-chen.github.io/2020/07/19/edx-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="augest-chen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Wechat.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="augest-chen">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">tsinghua Data Mining Theories and Algorithms for Tackling Big Data</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-07-19T22:01:36+08:00">
+                2020-07-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/edx/" itemprop="url" rel="index">
+                    <span itemprop="name">edx</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/edx/object-Object/" itemprop="url" rel="index">
+                    <span itemprop="name">[object Object]</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/edx/object-Object/data-science-professional-certificate/" itemprop="url" rel="index">
+                    <span itemprop="name">data science professional certificate</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="数据挖掘：理论与算法-Data-Mining-Theories-and-Algorithms-for-Tackling-Big-Data"><a href="#数据挖掘：理论与算法-Data-Mining-Theories-and-Algorithms-for-Tackling-Big-Data" class="headerlink" title="数据挖掘：理论与算法 | Data Mining: Theories and Algorithms for Tackling Big Data"></a>数据挖掘：理论与算法 | Data Mining: Theories and Algorithms for Tackling Big Data</h2><h3 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a><strong>第一部分</strong></h3><h3 id="走进数据"><a href="#走进数据" class="headerlink" title="走进数据"></a><strong>走进数据</strong></h3><p>这一部分基本是简单的介绍，我就稍微选几个我觉得是重点的吧。需要理解什么是data rich information poor。</p>
+<p><strong>其次，一些教材推荐：</strong></p>
+<p>1.数据挖掘：概念与技术</p>
+<p>2.模式分类，3.beautiful data （这本书案例多，可以拓展思路）4.data mining：practical machine learning tools and techniques 5. introduction to data mining</p>
+<p><strong>以及需要关注一些国际会议的论文：</strong></p>
+<p>international conference on data mining</p>
+<p>international conference on data engineering</p>
+<p>international conference on machine learning</p>
+<p>international joint conference on artificial intelligence</p>
+<p>Pacific-asia conference on knowledge discovery and data mining</p>
+<p>ACM SIGKDD conference on knowledge discovery and data mining</p>
+<p>ieee transaction knowledge and data engineering</p>
+<p>ieee transaction neural newtworks and learning systems</p>
+<p>data mining and konwledge discovery</p>
+<p>information sciences</p>
+<p><strong>两个协会：</strong></p>
+<p>ieee computiatioal intelligence society</p>
+<p>ieee computer society</p>
+<p><strong>几个华人学者的实验室官网，关注其进度：</strong></p>
+<p>xindong wu</p>
+<p>zhihua zhou</p>
+<p>jiawei han</p>
+<p>jian pei</p>
+<p>qiang yang</p>
+<p>chih-jen lin</p>
+<p>philip s. yu</p>
+<p>changshui zhang</p>
+<p><strong>一些工具的推荐：</strong></p>
+<p>1.检索类：</p>
+<p>Wikipedia</p>
+<p>google </p>
+<p>google scholar</p>
+<p>kddnuggest 专门的数据挖掘网站</p>
+<p>2.工具类</p>
+<p>matlab 的 app</p>
+<p>UCI machine learning repository 上的公开数据集</p>
+<p>weka 这是一款开源的数据挖掘软件</p>
+<p>数据挖掘的广义概念如下图：</p>
+<p><img src="/images/datamining.png" alt="alt"></p>
+<h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a><strong>数据</strong></h3><p>数据的定义（粗略的）：定量、定型化的属性值。数据是底层的一种表现形式，信息是高一层的。数据处理后的，才能叫做信息。数据不同类型，连续型的(continues)，二值型(binary)的。存储上，数据又可以分为逻辑下那型和物理层面的。物理上都是01的，但是逻辑上，可以是二维表等。在实际数据分析工作中，数据类型转换和数据自身的错误是面临的主要挑战之一。</p>
+<p>big data ： gartner的定义：数据量大，速度快（产生速度），数据种类多（千奇百怪）/mckinsey：超过传统数据处理的能力的数据</p>
+<p>三个特点：</p>
+<p>1.结构化变为非结构化</p>
+<p>2.batch变为数据流</p>
+<p>3.数据变大了</p>
+<p><img src="/images/bigdata.png" alt="alt"></p>
+<p>大数据应用：</p>
+<p>1.公共安全：预防犯罪</p>
+<p>2.医疗健康：undertreat &amp; overtreat、 基因</p>
+<p>3.城市规划：智慧城市</p>
+<p>4.地理位置：定位、商店购物</p>
+<p>5.情感分析：sentiment amalysis</p>
+<p>6.社交网站：</p>
+<p>7.点球成金；</p>
+<h3 id="数据到知识"><a href="#数据到知识" class="headerlink" title="数据到知识"></a><strong>数据到知识</strong></h3><p>开放数据，难以获得，因此，产生了数据孤岛。有一种趋势就是去打破这些数据孤岛。也就是数据公开。公开数据有两个要求：1.技术公开(可公开，易获得)，2.法律公开（开放，公开）。</p>
+<p>以下有可获得公开数据的来源：</p>
+<p><img src="/images/opendataset.png" alt="alt"></p>
+<p>此外，补充一个政府数据公开的网站：</p>
+<p><a href="https://www.data.gov/" target="_blank" rel="noopener">美国政府公开数据网站</a></p>
+<p>数据挖掘：从以前的统计分析，到现代的大型计算机引入的统计方式都是数据挖掘的一部分。<strong>数据挖掘应该是一个过程，一个自动化的过程，一个自动化提取有趣（interesting）、有用（useful）、隐藏（hidden）的模式（pattern），从海量的（massive）、不完整的（incomplete）、嘈杂（noisy）的数据中。</strong>并且，需要注意的是，并不是全自动的过程。数据挖掘，并不是，没有人的涉及的。数据挖掘（data mining），有一个近义词，知识发现（konwledge discovery）</p>
+<p>数据挖掘的流程：</p>
+<p><img src="/images/liuc.png" alt="alt"></p>
+<p>业界的数据挖掘流程：</p>
+<p><img src="/images/qiye.png" alt="alt"></p>
+<p>其中ETL,又可以被叫做数据融合。ETL系统的作用主要是数据提起、数据转换、数据装载</p>
+<p>可以把这些过程进行抽象，得到理论上的过程：</p>
+<p><img src="/images/lilun.png" alt="alt"></p>
+<h3 id="算法简介"><a href="#算法简介" class="headerlink" title="算法简介"></a><strong>算法简介</strong></h3><h4 id="分类问题"><a href="#分类问题" class="headerlink" title="分类问题"></a><strong>分类问题</strong></h4><p>定义：数据挖掘当中第一类问题就叫做Classification 分类问题，什么叫分类问题 你给我一批人过来，每个人有一些属性标签，身高体重年龄 反正这样的，一些属性 然后你要预测什么，比如他是好人还是坏人 我建一个模型能做这件事情 这就叫做分类。<strong>我为什么能够给他打标签，好人还是坏人 因为我以前已经见过，一批打过标签的人 我已经知道了</strong>，好人长什么样坏人长什么样，所以现在再来一个人 我就可以去，根据以前我学到的这些知识我就，来判断新来的这个人他到底是好，这就叫classification</p>
+<p>典型的算法：决策树、KNN、神经网络、支持向量机</p>
+<p>直观的来看：其实就是分界面：</p>
+<p><img src="/images/classexample.png" alt="alt"></p>
+<p>随着情况的复杂，有的时候一条线可能并不能完整的划分的很好，因此，也可以使用曲面、</p>
+<p><img src="/images/classexample2.png" alt="alt"></p>
+<p>本质上，这就是对于空间进行划分。不同的分类器的结果也是不一样的。重要的是：平滑的分类曲线更加重要！</p>
+<p>下图的绿色的分类器，就是过拟合的现象，而黑色的，更加平滑，即使有一定的错误，但是更加的平稳。</p>
+<p><img src="/images/fenleiqi.png" alt="alt"></p>
+<p>在数据挖掘的时候，一定要注意划分测试集(test set)和训练集(traning set),流程如下：</p>
+<p><img src="/images/liuchengtu.png" alt="alt"></p>
+<p>混淆矩阵：注意准确率的计算方法</p>
+<p><img src="/images/hunxiaojuzhen.png" alt="alt"></p>
+<p>AUC的概念：首先，看到左上角的图片，红色的正态分布为男人的身高，蓝色的正态分布代表女人的身高。来选择一个合适的分类器，来通过身高划分男人和女人。如果这个分类器设置为：这个人身高超过10m，才算是男人，那么没有人会别分类为男人，因此，预测为男，实际为男的数量就是0，然后预测为女，实际为男的数量就是100%。得到第一组坐标，就是[0,100%]，同理，如果分类器设置为：这个人升高超过1m，就是男人。那么可以得到第二组坐标[100%,0]。由此，我们将其在中间的图上画出。</p>
+<p><img src="/images/nanrennvrenwenti.png" alt="alt"></p>
+<p>如果分类的调整是随机的（random process）,那么这两点的连线，就是随机的分类器的曲线。但是，我们希望的是分类器的曲线是上图的曲线的。</p>
+<p><img src="/images/fenleiqi2.png" alt="alt"></p>
+<p>但是不同的分类器，都有着不同的曲线，未来衡量他们的效果。求解曲线到x轴的面积，我们叫做auc，使用其作为衡量分类器效果的一个标准。AUC上限为1，随机的AUC为0.5。这一过程，也叫做ROC分析</p>
+<p><strong>cost sensitive learning：</strong></p>
+<p>实际过程中，不同错误的危害是不一样的。实际操作，记得考虑成本</p>
+<p><strong>lift analysis：</strong></p>
+<p>用了模型和不使用模型的差异就是提升度(lift)，这个可以说是另外一种分析的模型效果的方法。</p>
+<p>简单例题：假设目标客户占人群的5%，现根据用户模型进行打分排序，取1000名潜在客户中排名前10%的客户，发现其中包含25名目标客户，问此模型在10%处的提升度是多少？</p>
+<p>1000*5% = 50人</p>
+<p>目标客户有50人</p>
+<p>1000*10% = 100人</p>
+<p>取得100人做预测</p>
+<p>25/100 = 25%</p>
+<p>模型的效率25%</p>
+<p>25%/5% = 5</p>
+<p>提升度为5</p>
+<h4 id="聚类问题"><a href="#聚类问题" class="headerlink" title="聚类问题"></a><strong>聚类问题</strong></h4><p>定义: 聚类 什么叫聚类，同样你给我一堆items，然后把它分分group 大家注意要把它，分成一组一组的 这个东西叫聚类。注意聚类是无监督学习，但是分类是监督学习。监督体现在，分类问题中，标签是预先知道的。</p>
+<p>聚类的距离：曼哈顿、欧式距离等，算法：K-means、层次聚类等</p>
+<h4 id="关联度"><a href="#关联度" class="headerlink" title="关联度"></a><strong>关联度</strong></h4><p>牛奶面包案例</p>
+<h4 id="回归模型"><a href="#回归模型" class="headerlink" title="回归模型"></a><strong>回归模型</strong></h4><p>这里先略过，后续有具体的。下图，全部为线型回归，所谓线性回归，指的是beta这个系数和x是线性，也就是beta*x是线性，而不是整体是不是线性。</p>
+<p><img src="/images/reg.png" alt="alt"></p>
+<p>回归也是存在过拟合的问题。要考虑平滑度。</p>
+<h4 id="可视化"><a href="#可视化" class="headerlink" title="可视化"></a><strong>可视化</strong></h4><p><img src="/images/vs.png" alt="alt"></p>
+<h4 id="数据质量"><a href="#数据质量" class="headerlink" title="数据质量"></a><strong>数据质量</strong></h4><p>做数据挖掘，最重要的是要进行数据预处理。必须重视数据的预测护理。不然容易出现gigo问题。也就是垃圾进，垃圾出。</p>
+<p><img src="/images/qs.png" alt="alt"></p>
+<p>数据预处理的步骤：</p>
+<p><img src="/images/clear.png" alt="alt"></p>
+<h4 id="数据隐私"><a href="#数据隐私" class="headerlink" title="数据隐私"></a><strong>数据隐私</strong></h4><p>因为隐私问题，想要实现：收集数据的时候，并不知道每一个填问卷的人的具体答案，但是当所有人的问卷收集上来的时候，可以知道全体人员中选择这一答案的问题，是比较难的。</p>
+<p><img src="/images/yinsi.png" alt="alt"></p>
+<p>将同一个问题表述为两个问题。然后分为AB卷。最后在统计结果。</p>
+<p>典型过程如下：</p>
+<p><img src="/images/wenjuan.png" alt="alt"></p>
+<h4 id="云计算"><a href="#云计算" class="headerlink" title="云计算"></a><strong>云计算</strong></h4><p>本意：服务器的需求有峰谷，按道理必须要满足顶峰时候的服务器需求，但是这就造成了谷峰时候的服务器资源的闲置。出于优化配置的考虑，将买服务器将变为组服务器（pay as you go）</p>
+<p>software as a service（SAAS）租软件等</p>
+<p>platform as a service 租开发环境等</p>
+<p>Infrastructure as a service（IAAS）租cpu、内存、硬盘等</p>
+<h4 id="并行计算"><a href="#并行计算" class="headerlink" title="并行计算"></a><strong>并行计算</strong></h4><p>愚公移山是串行，并行计算是并行。推荐使用GPU,但是cpu也可以。但是目前GPU还是需要和CPU协同工作，构成异构计算平台。</p>
+<h4 id="summary"><a href="#summary" class="headerlink" title="summary"></a><strong>summary</strong></h4><p>数据+算法+硬件支撑 = 数据挖掘</p>
+<p>一切要取决于你的需求，例如客户需要解释，那就搞决策树，那是可解释的，如果不需要解释的，也许可以试一下神经网络。拿到问题，先由简单，在试探复杂的。</p>
+<p><img src="/images/summm.png" alt="alt"></p>
+<h4 id="cases"><a href="#cases" class="headerlink" title="cases"></a><strong>cases</strong></h4><p>量化交易：</p>
+<p><img src="/images/nas.png" alt="alt"></p>
+<p>可以尝试</p>
+<p>彩票：</p>
+<p><img src="/images/caipiao.png" alt="alt"></p>
+<p>不能挖掘的问题在于，底层逻辑就是随机的。数据挖掘本质就是挖掘规律，不是创造规律</p>
+<p>内在分组：</p>
+<p><img src="/images/neizai.png" alt="alt"></p>
+<p>整体负相关，但是分组后，又是正相关。因此，要重点注意数据内部分组。</p>
+<p>幸存者存在偏差：</p>
+<p>二战的轰炸机的案例</p>
+<p>无内在联系：</p>
+<p>我的工资增长和美国的青少年的犯罪率有着负相关？不合理。</p>
+<p>时间维度：</p>
+<p><img src="/images/shijian.png" alt="alt"></p>
+<p>到底是商家店铺数量减少，营业额减少。还是数量增加，营业额增加。</p>
+<h3 id="第二部分"><a href="#第二部分" class="headerlink" title="第二部分"></a><strong>第二部分</strong></h3>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/edx/" rel="tag"># edx</a>
+          
+            <a href="/tags/tsinghua/" rel="tag"># tsinghua</a>
+          
+            <a href="/tags/object-Object/" rel="tag"># [object Object]</a>
+          
+            <a href="/tags/data-science-professional-certificate/" rel="tag"># data science professional certificate</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/07/19/cyjournal-57/" rel="next" title="cyjournal">
+                <i class="fa fa-chevron-left"></i> cyjournal
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/Wechat.jpg"
+                alt="augest-chen" />
+            
+              <p class="site-author-name" itemprop="name">augest-chen</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">100</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">108</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">61</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据挖掘：理论与算法-Data-Mining-Theories-and-Algorithms-for-Tackling-Big-Data"><span class="nav-number">1.</span> <span class="nav-text">数据挖掘：理论与算法 | Data Mining: Theories and Algorithms for Tackling Big Data</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一部分"><span class="nav-number">1.1.</span> <span class="nav-text">第一部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#走进数据"><span class="nav-number">1.2.</span> <span class="nav-text">走进数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据"><span class="nav-number">1.3.</span> <span class="nav-text">数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据到知识"><span class="nav-number">1.4.</span> <span class="nav-text">数据到知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#算法简介"><span class="nav-number">1.5.</span> <span class="nav-text">算法简介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#分类问题"><span class="nav-number">1.5.1.</span> <span class="nav-text">分类问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#聚类问题"><span class="nav-number">1.5.2.</span> <span class="nav-text">聚类问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联度"><span class="nav-number">1.5.3.</span> <span class="nav-text">关联度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#回归模型"><span class="nav-number">1.5.4.</span> <span class="nav-text">回归模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可视化"><span class="nav-number">1.5.5.</span> <span class="nav-text">可视化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据质量"><span class="nav-number">1.5.6.</span> <span class="nav-text">数据质量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据隐私"><span class="nav-number">1.5.7.</span> <span class="nav-text">数据隐私</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#云计算"><span class="nav-number">1.5.8.</span> <span class="nav-text">云计算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#并行计算"><span class="nav-number">1.5.9.</span> <span class="nav-text">并行计算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#summary"><span class="nav-number">1.5.10.</span> <span class="nav-text">summary</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cases"><span class="nav-number">1.5.11.</span> <span class="nav-text">cases</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二部分"><span class="nav-number">1.6.</span> <span class="nav-text">第二部分</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">augest-chen</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
