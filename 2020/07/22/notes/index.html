@@ -87,15 +87,15 @@
 
 
 
-<meta name="description" content="对于样本集 DD &#x3D; { (x1x1,y1y1), (x2x2,y2y2), …, (xmxm,ymym) } 线性回归模型就是要找到一个模型f(x)&#x3D;wx+bf(x)&#x3D;wx+b 使得 ∀i∈[1,m]∀i∈[1,m] 都有 f(xi)f(xi) 尽可能地接近于 yiyi 所以我们使每一个样本的预测值与真实值的差的平方和最小，即：(w∗,b∗)&#x3D;argw,bmin∑i&#x3D;1m(f(xi)−yi)2&#x3D;">
+<meta name="description" content="对于样本集：$$DD &#x3D; { (y_1,y_1), (x_2,y_2), …, (x_m,y_m) }$$线性回归模型就是要找到一个模型：$$f(x)&#x3D;wx+b$$使得 ∀i∈[1,m]都有f(x_i) 尽可能地接近于 y_i所以我们使每一个样本的预测值与真实值的差的平方和最小，即：$$(w^∗,b^∗)&#x3D;arg_w,bmin∑i&#x3D;1m(f(xi)−yi)2&#x3D;argw,bmin∑i&#x3D;1m(wxi+">
 <meta property="og:type" content="article">
 <meta property="og:title" content="simple linear regression deduction">
 <meta property="og:url" content="https://augest-chen.github.io/2020/07/22/notes/index.html">
 <meta property="og:site_name" content="augest-chen">
-<meta property="og:description" content="对于样本集 DD &#x3D; { (x1x1,y1y1), (x2x2,y2y2), …, (xmxm,ymym) } 线性回归模型就是要找到一个模型f(x)&#x3D;wx+bf(x)&#x3D;wx+b 使得 ∀i∈[1,m]∀i∈[1,m] 都有 f(xi)f(xi) 尽可能地接近于 yiyi 所以我们使每一个样本的预测值与真实值的差的平方和最小，即：(w∗,b∗)&#x3D;argw,bmin∑i&#x3D;1m(f(xi)−yi)2&#x3D;">
+<meta property="og:description" content="对于样本集：$$DD &#x3D; { (y_1,y_1), (x_2,y_2), …, (x_m,y_m) }$$线性回归模型就是要找到一个模型：$$f(x)&#x3D;wx+b$$使得 ∀i∈[1,m]都有f(x_i) 尽可能地接近于 y_i所以我们使每一个样本的预测值与真实值的差的平方和最小，即：$$(w^∗,b^∗)&#x3D;arg_w,bmin∑i&#x3D;1m(f(xi)−yi)2&#x3D;argw,bmin∑i&#x3D;1m(wxi+">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-22T12:30:12.000Z">
-<meta property="article:modified_time" content="2020-07-23T01:50:37.558Z">
+<meta property="article:modified_time" content="2020-07-23T03:38:13.068Z">
 <meta property="article:author" content="augest-chen">
 <meta property="article:tag" content="simple linear regression">
 <meta property="article:tag" content="notes">
@@ -416,7 +416,7 @@
       
 
       
-        <p>对于样本集 DD = { (x1x1,y1y1), (x2x2,y2y2), …, (xmxm,ymym) } 线性回归模型就是要找到一个模型f(x)=wx+bf(x)=wx+b 使得 ∀i∈[1,m]∀i∈[1,m] 都有 f(xi)f(xi) 尽可能地接近于 yiyi 所以我们使每一个样本的预测值与真实值的差的平方和最小，即：<br>(w∗,b∗)=argw,bmin∑i=1m(f(xi)−yi)2=argw,bmin∑i=1m(wxi+b−yi)2(1)<br>(w∗,b∗)=argw,b⁡min∑i=1m(f(xi)−yi)2(1)=argw,b⁡min∑i=1m(wxi+b−yi)2</p>
+        <p>对于样本集：<br>$$<br>DD = { (y_1,y_1), (x_2,y_2), …, (x_m,y_m) }<br>$$<br>线性回归模型就是要找到一个模型：<br>$$<br>f(x)=wx+b<br>$$<br>使得 ∀i∈[1,m]都有f(x_i) 尽可能地接近于 y_i所以我们使每一个样本的预测值与真实值的差的平方和最小，即：<br>$$<br>(w^∗,b^∗)=arg_w,bmin∑i=1m(f(xi)−yi)2=argw,bmin∑i=1m(wxi+b−yi)2(1)<br>$$<br>(w∗,b∗)=argw,bmin∑i=1m(f(xi)−yi)2=argw,bmin∑i=1m(wxi+b−yi)2(1)<br>(w∗,b∗)=argw,b⁡min∑i=1m(f(xi)−yi)2(1)=argw,b⁡min∑i=1m(wxi+b−yi)2</p>
 <p>这可以看做是对多元函数 h(w,b)=∑mi=1(wxi+b−yi)2h(w,b)=∑i=1m(wxi+b−yi)2 求最小值，则按照微积分的知识，函数 hh 对 ww 和 bb 分别求偏导，并令二者的偏导数为零，则此时对应的 w∗w∗ 和 b∗b∗ 便是使得 hh 取最小的值。故，求偏导后得到：<br>∂h(w,b)∂w=∑i=1m2(wxi+b−yi)∗xi=2(w∑i=1mx2i−∑i=1m(yi−b)xi)(2)<br>∂h(w,b)∂w=∑i=1m2(wxi+b−yi)∗xi(2)=2(w∑i=1mxi2−∑i=1m(yi−b)xi)</p>
 <p>∂h(w,b)∂b=∑i=1m2(wxi+b−yi)∗1=2(mb−∑i=1m(yi−wxi))(3)<br>∂h(w,b)∂b=∑i=1m2(wxi+b−yi)∗1(3)=2(mb−∑i=1m(yi−wxi))</p>
 <p>分别令二者等于0便可以得到 ww 和 bb 的最优解：<br>wb=∑mi=1yi(xi−x¯)∑mi=1x2i−1m(∑mi=1xi)2=1m∑i=1m(yi−wxi)(4)(5)<br>(4)w=∑i=1myi(xi−x¯)∑i=1mxi2−1m(∑i=1mxi)2(5)b=1m∑i=1m(yi−wxi)</p>
