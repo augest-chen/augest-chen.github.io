@@ -118,8 +118,10 @@
 <meta property="og:image" content="https://augest-chen.github.io/images/caipiao.png">
 <meta property="og:image" content="https://augest-chen.github.io/images/neizai.png">
 <meta property="og:image" content="https://augest-chen.github.io/images/shijian.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/ignore.png">
+<meta property="og:image" content="https://augest-chen.github.io/images/local.png">
 <meta property="article:published_time" content="2020-07-19T14:01:36.000Z">
-<meta property="article:modified_time" content="2020-07-21T07:24:02.528Z">
+<meta property="article:modified_time" content="2020-07-31T05:41:36.469Z">
 <meta property="article:author" content="augest-chen">
 <meta property="article:tag" content="edx">
 <meta property="article:tag" content="tsinghua">
@@ -592,7 +594,35 @@
 <p>时间维度：</p>
 <p><img src="/images/shijian.png" alt="alt"></p>
 <p>到底是商家店铺数量减少，营业额减少。还是数量增加，营业额增加。</p>
-<h3 id="第二部分：数据预处理"><a href="#第二部分：数据预处理" class="headerlink" title="第二部分：数据预处理"></a><strong>第二部分：数据预处理</strong></h3>
+<h3 id="第二部分：数据预处理"><a href="#第二部分：数据预处理" class="headerlink" title="第二部分：数据预处理"></a><strong>第二部分：数据预处理</strong></h3><p>各类算法应用的前提，数据是完整的。</p>
+<p>数据预处理可以分为以下几个部分：数据清洗、数据转换、数据描述、特征选择、特征提起</p>
+<p>真实的数据是十分ditry的。具体体现是：空缺数据、数据明显错误、数据格式不一致、数据冗余</p>
+<h3 id="缺失数据"><a href="#缺失数据" class="headerlink" title="缺失数据"></a>缺失数据</h3><p>缺失数据的原因是：设备故障、数据没有提供、不适用（not applicable）</p>
+<p>缺失数据的类型是：完全随机缺失、有条件缺失（缺失的数据，取决于某个属性）、非随机缺失</p>
+<p>缺失数据处理方法：</p>
+<p><img src="/images/ignore.png" alt="alt"></p>
+<h3 id="离群数据（outlier）"><a href="#离群数据（outlier）" class="headerlink" title="离群数据（outlier）"></a>离群数据（outlier）</h3><p>异常和离群是有区别的，注意区分。</p>
+<p>如何检测离群点：local outlier factor 这是离群点分析的一个基本思路，但是并不是唯一的</p>
+<p><img src="/images/local.png" alt="alt"></p>
+<h3 id="重复数据（duplicate-data）"><a href="#重复数据（duplicate-data）" class="headerlink" title="重复数据（duplicate data）"></a>重复数据（duplicate data）</h3><p>如何合并重复数据。</p>
+<p>如果数据高度重复的部分，分布比较贴近，那就可以用移动窗口法。</p>
+<p>如果分布随机，或者不贴近，key方法。基本思想是，先对数据进行标记key，如果两条数据非常有可能是重复的，那么生成的key，就应该是接近和相似的。然后对key进行排序，在进行合并数据。</p>
+<p>数据的类型有非常多,我们有连续型 连续型比如说一个人的身高。可以说165 168 170这些都是<br>一个连续的 包括人的体重都要Continues，他是一个这种Real Values，当然有的正有的是负 这都可以的，有些时候我们看到是这种Discrete，我们叫这种离散型，比如说有多少个人 这就是一个典型的，一个离散的一个数值 还有叫Ordinal，它是一种比如说，老师给你打分 可能给你打了个，优良中差 这个东西你不能直接用，数据挖掘算法去处理的 你还是得把它变成什么0123这样的东西，但是好在就是它本身是有一个先后顺序的 比如说Low你可以写是0，然后Medine是1 High就是2，你可以把它转换成一个数值，最麻烦的最可怕的其实是这个东西叫Nominal，比如说他说这个有一项叫做Occupation职业 你可以选老师工人，什么Salesman这种销售员等等的，或者颜色RGB 或中国有这么，多少数民族 彝壮满侗谣 白土哈布朝，有很多很多的这种少数民族，你怎么去编码 这个东西很多人，从来就没有想过 你在数据挖掘，书上一般也不会告诉你的，他们认为这种问题是不存在的，其实这个问题是最纠结的 没有人知道，怎么去编码 我可以告诉你这种，问题你说他是012 你没法这样，去编码的 人们会觉得说那我就，这样编 其实是不对的 现在越来越多的数据是这种所谓的叫Unstructure，就是要这种文本数据 有网上的，各种各样的一些发的一些，朋友圈一些这个日志 它都是，一些文本的东西 文本你也不能够，直接去在计算机中处理，大家一定要记得计算机只能处理0和1，所有的东西归根到底都是01，所以一段文字怎么样去把它表示，成为这样一个数值型的东西，那么我们后面以后单元当中会去提到，刚才我说了有这种叫Nominal的东西，比如说这种RGB这样的，三个颜色你怎么去编码 人们可能会，觉得那不就012不就编了吗，你是可以这样编你的程序是可以运行，但是你要小心 你这里面其实背后隐含了很多东西了 如果你说红颜色是0这个是1这个是2，其实你就暗含了一个假设，你会认为绿颜色和红颜色的距离要，小于蓝颜色的红颜色的距离<br>你一旦给它进行了编码 你就等于在空间当中给他施加了这么一个距离度量 就等于说你认为这个点在这儿 这个点在这里 可是你有没有道理这么说 你有没有道理说蓝颜色就跟红颜色相对更远了如果你没有的话 你这样编码你凭什么大家看这样的例子</p>
+<p>不同的编码方式，可能会导致求解的方法和算法的复杂程度的不一致。水果颜色分类的问题。</p>
+<h3 id="采样（sampling）"><a href="#采样（sampling）" class="headerlink" title="采样（sampling）"></a>采样（sampling）</h3><p>统计学当中说采样其实是正好反过来了 在大数据当中说我要采样为什么呀 是因为我数据太多，这些数据都摆在我面前 我没有能力一下子全把它处理掉 所以我就去挑一些比如挑10%出来去进行处理<br>但是在统计学当中，为什么要做采样 比如说我要做那么人口的一个什么抽样调查，看看中国人平均收入多少，那是因为你不可能把14亿人全部的信息都拿来 这个它的这个数据的采集过程非常的昂贵所以你只能去挑一些来去进行采样所以它是不太一样 在大数据时代是数据太多 你处理不过了</p>
+<p>对数据进行聚集（aggregation），电话的例子。</p>
+<h3 id="不平衡数据"><a href="#不平衡数据" class="headerlink" title="不平衡数据"></a>不平衡数据</h3><p>比如说你要去判断一个人有没有病，那你做这个分类器根据它的这个什么体检报告输进去。要输出的结果实际上可能一百个人当中99个人都健康的只有一个人生病 那我就有可能做出一个分类器<br>这个分类器就是什么人，进来我都告诉你这个人是健康的。所以它的准确率是99% 你一看我觉得很准99% 但其实有意义吗？</p>
+<p>因此，要采用G-mean、F-meansure等</p>
+<h3 id="过度采样（over-sampling）"><a href="#过度采样（over-sampling）" class="headerlink" title="过度采样（over-sampling）"></a>过度采样（over-sampling）</h3><p>完全克隆是没有意义的，类似差值，取点，在其附近区域内，进行随机生成。这就是smote方法</p>
+<h3 id="标准化处理（normalization）"><a href="#标准化处理（normalization）" class="headerlink" title="标准化处理（normalization）"></a>标准化处理（normalization）</h3><p>把原始数据映射到0～1之间。</p>
+<p>min-max的方法，对于数据有明确上下界，适合。</p>
+<p>但是要是没有明确上下界，可以使用z-score标准化方法</p>
+<h3 id="统计描述"><a href="#统计描述" class="headerlink" title="统计描述"></a>统计描述</h3><p>mean容易受到极端样本的影响</p>
+<p>median中位数</p>
+<p>mode众数</p>
+<p>variance数据多样性和差异化的衡量</p>
+<p>person相关性：r=0，只是说明a，b之间并不是不相关，只是线性不相关。</p>
+
       
     </div>
     
@@ -721,7 +751,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">133</span>
+                  <span class="site-state-item-count">147</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -732,7 +762,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">176</span>
+                  <span class="site-state-item-count">190</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -776,7 +806,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据挖掘：理论与算法-Data-Mining-Theories-and-Algorithms-for-Tackling-Big-Data"><span class="nav-number">1.</span> <span class="nav-text">数据挖掘：理论与算法 | Data Mining: Theories and Algorithms for Tackling Big Data</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一部分：总体简介"><span class="nav-number">1.1.</span> <span class="nav-text">第一部分：总体简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#走进数据"><span class="nav-number">1.2.</span> <span class="nav-text">走进数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据"><span class="nav-number">1.3.</span> <span class="nav-text">数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据到知识"><span class="nav-number">1.4.</span> <span class="nav-text">数据到知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#算法简介"><span class="nav-number">1.5.</span> <span class="nav-text">算法简介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#分类问题"><span class="nav-number">1.5.1.</span> <span class="nav-text">分类问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#聚类问题"><span class="nav-number">1.5.2.</span> <span class="nav-text">聚类问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联度"><span class="nav-number">1.5.3.</span> <span class="nav-text">关联度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#回归模型"><span class="nav-number">1.5.4.</span> <span class="nav-text">回归模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可视化"><span class="nav-number">1.5.5.</span> <span class="nav-text">可视化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据质量"><span class="nav-number">1.5.6.</span> <span class="nav-text">数据质量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据隐私"><span class="nav-number">1.5.7.</span> <span class="nav-text">数据隐私</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#云计算"><span class="nav-number">1.5.8.</span> <span class="nav-text">云计算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#并行计算"><span class="nav-number">1.5.9.</span> <span class="nav-text">并行计算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#summary"><span class="nav-number">1.5.10.</span> <span class="nav-text">summary</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cases"><span class="nav-number">1.5.11.</span> <span class="nav-text">cases</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二部分：数据预处理"><span class="nav-number">1.6.</span> <span class="nav-text">第二部分：数据预处理</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据挖掘：理论与算法-Data-Mining-Theories-and-Algorithms-for-Tackling-Big-Data"><span class="nav-number">1.</span> <span class="nav-text">数据挖掘：理论与算法 | Data Mining: Theories and Algorithms for Tackling Big Data</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一部分：总体简介"><span class="nav-number">1.1.</span> <span class="nav-text">第一部分：总体简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#走进数据"><span class="nav-number">1.2.</span> <span class="nav-text">走进数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据"><span class="nav-number">1.3.</span> <span class="nav-text">数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据到知识"><span class="nav-number">1.4.</span> <span class="nav-text">数据到知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#算法简介"><span class="nav-number">1.5.</span> <span class="nav-text">算法简介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#分类问题"><span class="nav-number">1.5.1.</span> <span class="nav-text">分类问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#聚类问题"><span class="nav-number">1.5.2.</span> <span class="nav-text">聚类问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联度"><span class="nav-number">1.5.3.</span> <span class="nav-text">关联度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#回归模型"><span class="nav-number">1.5.4.</span> <span class="nav-text">回归模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可视化"><span class="nav-number">1.5.5.</span> <span class="nav-text">可视化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据质量"><span class="nav-number">1.5.6.</span> <span class="nav-text">数据质量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据隐私"><span class="nav-number">1.5.7.</span> <span class="nav-text">数据隐私</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#云计算"><span class="nav-number">1.5.8.</span> <span class="nav-text">云计算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#并行计算"><span class="nav-number">1.5.9.</span> <span class="nav-text">并行计算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#summary"><span class="nav-number">1.5.10.</span> <span class="nav-text">summary</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cases"><span class="nav-number">1.5.11.</span> <span class="nav-text">cases</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二部分：数据预处理"><span class="nav-number">1.6.</span> <span class="nav-text">第二部分：数据预处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缺失数据"><span class="nav-number">1.7.</span> <span class="nav-text">缺失数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#离群数据（outlier）"><span class="nav-number">1.8.</span> <span class="nav-text">离群数据（outlier）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重复数据（duplicate-data）"><span class="nav-number">1.9.</span> <span class="nav-text">重复数据（duplicate data）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#采样（sampling）"><span class="nav-number">1.10.</span> <span class="nav-text">采样（sampling）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不平衡数据"><span class="nav-number">1.11.</span> <span class="nav-text">不平衡数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#过度采样（over-sampling）"><span class="nav-number">1.12.</span> <span class="nav-text">过度采样（over-sampling）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标准化处理（normalization）"><span class="nav-number">1.13.</span> <span class="nav-text">标准化处理（normalization）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#统计描述"><span class="nav-number">1.14.</span> <span class="nav-text">统计描述</span></a></li></ol></li></ol></div>
             
 
           </div>
